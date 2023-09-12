@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forms</title>
+</head>
+<body>
+   <h1>Forms</h1>
+
+   <h2>Google Search</h2>
+   <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Search term">
+      <button type="submit">Search</button>
+   </form>
+
+   <h2>Refresh Page with parameters</h2>
+   <form action="" method="get">
+      <label for="firstname">First name:</label>
+      <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+
+      <label for="lastname">Last name:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+
+      <input type="color">
+
+      <button type="submit">Submit</button>
+   </form>
+
+   <h2>Other form controls</h2>
+   <form action="">
+      <textarea name="" id="text" cols="30" rows="10">Starter text</textarea>
+
+      <input type="range" min="0" max="10" step="2" name="rangeValue" id="">
+
+      <label for="checkbox">Agree to terms:</label>
+      <input type="checkbox" id="checkbox" name="checkbox">
+
+      <label for="shirtSize">Shirt size:</label>
+      <select name="shirtSize" id="shirtSize">
+         <option value="s">Small</option>
+         <option value="m">Medium</option>
+         <option value="l">Large</option>
+      </select>
+
+      <label for="phone">Call me</label>
+      <input type="radio" name="contactType" id="phone" value="phone">
+      <label for="emailLabel">Email</label>
+      <input type="radio" name="contactType" id="emailLabel" value="email">
+
+      <button type="submit">Submit</button>
+   </form>
+
+</body>
+</html>
