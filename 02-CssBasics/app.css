@@ -39,6 +39,10 @@ p {
    font-size: 20px;
 }
 
+#cast {
+   list-style-type: "\1F44D";
+}
+
 .tag {
    text-decoration: none;
    background-color: black;
