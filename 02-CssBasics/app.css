@@ -1,3 +1,32 @@
-p {
+/* html element selector */
+div {
    color: red;
+   border: 1px solid blue;
+   border-radius: 6px;
+   margin: 6px;
+   padding: 6px;
+
+   font-family: Arial, Helvetica, sans-serif, Times, serif;
 }
+
+h1 {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 46px;
+   font-weight: bold;
+   text-align: center;
+}
+
+a {
+   font-style: italic;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 10px;
+   word-spacing: 20px;
+}
+
+h2 {
+   text-shadow: 2px 2px 5px magenta;
+}
+
+p {
+   line-height: 2;
+} 
