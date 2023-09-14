@@ -23,8 +23,17 @@ a {
    letter-spacing: 10px;
    word-spacing: 20px;
    text-transform: capitalize;
-   text-decoration: underline wavy 1px;
+   text-decoration: underline underline 1px;
+   transition: .5s;
 }
+   a:hover {
+      color: magenta;
+      text-decoration: underline wavy 1px;
+   }
+
+   a:visited {
+      color: orange;
+   }
 
 h2 {
    text-shadow: 2px 2px 5px magenta;
