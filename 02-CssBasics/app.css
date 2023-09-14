@@ -33,3 +33,8 @@ h2 {
 p {
    line-height: 2;
 } 
+
+#featured {
+   background-color: gold;
+   font-size: 20px;
+}
