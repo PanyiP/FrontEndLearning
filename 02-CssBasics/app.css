@@ -1,4 +1,4 @@
-/* html element selector */
+/* Element selector */
 div {
    color: red;
    border: 1px solid blue;
@@ -26,14 +26,15 @@ a {
    text-decoration: underline underline 1px;
    transition: .5s;
 }
-   a:hover {
-      color: magenta;
-      text-decoration: underline wavy 1px;
-   }
 
-   a:visited {
-      color: orange;
-   }
+a:hover {
+   color: magenta;
+   text-decoration: underline wavy 1px;
+}
+
+a:visited {
+   color: orange;
+}
 
 h2 {
    text-shadow: 2px 2px 5px magenta;
@@ -41,8 +42,9 @@ h2 {
 
 p {
    line-height: 2;
-} 
+}
 
+/* ID selector */
 #featured {
    background-color: gold;
    font-size: 20px;
@@ -52,8 +54,59 @@ p {
    list-style-type: "\1F44D";
 }
 
+/* Class selector */
 .tag {
    text-decoration: none;
    background-color: black;
    color: white;
+}
+
+/* Universal selector */
+* {
+   /* affects all elements */
+   font-family: 'Courier New', Courier, monospace;
+}
+
+/* Attribute selector */
+input[type="email"] {
+   background-color: gold;
+}
+
+a[href*="wiki"] {
+   /* href which contains wiki anywhere in it */
+   color: red;
+}
+
+a[href^="#"] {
+   /* href which starts with a # sign */
+   color: green;
+}
+
+a[href$=".org"] {
+   /* href which end with .org */
+   color: blue;
+}
+
+/* Selector list */
+h2,
+h3 {
+   font-style: italic;
+}
+
+/* Descendant combinator */
+div h2 {
+   /* selects h2-s that are in a div */
+   font-size: large;
+}
+
+/* Child combinator */
+ul>li {
+   /* select li-s that are direct children of a ul */
+   font-size: small;
+}
+
+/* Compound selector */
+div.special {
+   /* selects the div-s with the class of special */
+   text-align: center;
 }
