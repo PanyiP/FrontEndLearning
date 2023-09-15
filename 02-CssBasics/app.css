@@ -110,3 +110,57 @@ div.special {
    /* selects the div-s with the class of special */
    text-align: center;
 }
+
+/* Adjacent combinator */
+h1+p {
+   /* selects a paragraph that comes immediately after an h1 */
+   background-color: deeppink;
+}
+
+/* Sibling combinator */
+h1~p {
+   /* selects all paragraph that come immediately after an h1 */
+   display: inline-block;
+}
+
+/* Pseudo classes */
+button:hover {
+   color: blue;
+}
+
+input:disabled {
+   border: 1px solid aqua;
+}
+
+li:nth-of-type(2n) {
+   /* Every second li */
+   margin: 5px;
+}
+
+div:not(.box) {
+   /* Every div, which does not have the box class */
+   box-shadow: 5px 5px 3px gray;
+}
+
+/* etc... */
+
+/* Pseudo elements */
+p::first-line {
+   /* The first line of every paragraph */
+   color: greenyellow;
+}
+
+input::placeholder {
+   opacity: .5;
+}
+
+p::selection {
+   /* Changes the style of the part of the paragraph which is selected by the user */
+   background-color: brown;
+}
+
+/* etc... */
+
+/* Specificity - Selector priority */
+/* Element -> Class -> ID -> Inline style */
+/* Least priorty ------> Most priority */
