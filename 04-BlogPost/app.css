@@ -87,3 +87,8 @@ blockquote cite {
    font-weight: bold;
    margin-left: 20px;
 }
+
+code {
+   color: #e95400;
+   font-weight: bold;
+}
