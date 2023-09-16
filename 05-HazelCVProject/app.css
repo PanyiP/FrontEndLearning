@@ -6,20 +6,21 @@ body {
 
 .hero {
    background-color: #f08e80;
-   height: 90vh;
+   min-height: 90vh;
+   display: inline-block;
+   color: white;
 }
 
 .navbar {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   color: white;
    padding: 24px 32px;
 }
 
 .navbar .links a {
-   color: white;
    text-decoration: none;
+   color: white;
    margin-right: 16px;
    font-size: 1.2rem;
 }
@@ -39,4 +40,42 @@ body {
 
 .navbar .contact:hover {
    opacity: 0.8;
+}
+
+.hero-content {
+   padding: 0 15%;
+}
+
+.tagline {
+   font-size: 4.5rem;
+   letter-spacing: 2px;
+   padding: 32px 0;
+}
+
+.two-column-section{
+   font-size: 2rem;
+}
+
+.two-column-section p{
+   width: 50%;
+   box-sizing: border-box;
+   float: left;
+}
+
+.two-column-section .skills{
+   width: 50%;
+   box-sizing: border-box;
+   float: left;
+   padding: 0;
+   list-style: none;
+}
+
+.two-column-section .skills li{
+   width: 50%;
+   box-sizing: border-box;
+   float: left;
+   padding: 0;
+   list-style: none;
+   font-size: 1.25rem;
+   margin: 8px 0;
 }
