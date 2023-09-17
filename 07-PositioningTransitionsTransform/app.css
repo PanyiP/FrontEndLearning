@@ -1,3 +1,7 @@
+body {
+   height: 3000px;
+}
+
 .box1 {
    border: 2px solid black;
    width: 300px;
@@ -33,4 +37,15 @@
    position: absolute;
    bottom: 0px;
    z-index: inherit;
+}
+
+.fixed-pos {
+   display: block;
+   width: 100%;
+   background-color: gold;
+   /* always relative to the root element and stays at position when scrolling */
+   position: fixed;
+   left: 10px;
+   top: 300px;
+   z-index: 20;
 }
