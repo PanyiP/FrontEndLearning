@@ -1,0 +1,36 @@
+.box1 {
+   border: 2px solid black;
+   width: 300px;
+   height: 300px;
+   margin: 5px;
+   background-color: magenta;
+   display: inline-block;
+   vertical-align: middle;
+   z-index: 10;
+}
+
+.box2 {
+   border: 2px solid black;
+   width: 300px;
+   height: 300px;
+   margin: 5px;
+   background-color: yellow;
+   display: inline-block;
+   vertical-align: middle;
+   position: relative;
+   top: 150px;
+   left: -150px;
+   z-index: 5;
+}
+
+.relative-pos {
+   position: relative;
+   top: 200px;
+   left: 50px;
+}
+
+.absolute-pos {
+   position: absolute;
+   bottom: 0px;
+   z-index: inherit;
+}
