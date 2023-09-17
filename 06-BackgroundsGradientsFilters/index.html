@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="app.css">
+   <title>Backgrounds, Gradients, Filters</title>
+</head>
+
+<body>
+   <h2>Backgrounds</h2>
+   <div class="box">
+      background-image: url("images/peacock.png"), url("images/sunset.jpg");
+   </div>
+
+   <div class="box2">
+      background-image: url("images/peacock.png");
+      background-color: aquamarine;
+   </div>
+
+   <div class="box3">
+      background-image: url("images/peacock.png");
+      background-repeat: no-repeat;
+   </div>
+
+   <hr>
+
+   <div class="box4">
+      background-size: contain;
+      background-repeat: no-repeat;
+   </div>
+
+   <div class="box5">
+      background-size: cover;
+   </div>
+
+   <hr>
+
+   <div>
+      <div class="box6">
+         background-image: url("images/people.jpg");
+         background-size: cover;
+         background-position: center;
+      </div>
+      
+      <div class="box7">
+         background-image: url("images/woman.jpg");
+         background-clip: padding-box;
+      </div>
+   </div>
+
+   <hr>
+
+   <h2>Gradients</h2>
+
+   <div class="gradient1">
+      linear gradient
+   </div>
+
+   <div class="gradient2">
+      radial gradient
+   </div>
+
+   <div class="gradient3">
+      conic gradient
+   </div>
+
+   <div class="gradient4">
+      repeating linear gradient <br>
+      repeating radial gradient <br>
+      repeating conic gradient
+   </div>
+
+   <hr>
+
+   <h2>Filters</h2>
+
+   <div class="filter1">
+      filter: blur(2px) grayscale()
+   </div>
+
+</body>
+
+</html>
