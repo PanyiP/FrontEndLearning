@@ -1,22 +1,24 @@
 /* FlexBox: For laying out items in rows and columns
  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
  
- Display: flex; -> set a container to Display: flex;
+ Must be set on Container:
+  display: flex; -> set a container to Display: flex;
+  align-content: Controls the spacing between rows or columns along the CROSS axis. Only matters if the content WRAPS.: CENTER, SPACE-BETWEEN, FLEX-START, FLEX-END
+  align-items: How to place content along the CROSS axis.: STRETCH, CENTER, FLEX-START, FLEX-END
+  flex-direction: Switches the flow of the flex container by switching up the MAIN and CROSS axis.: ROW, COLUMN
+  flex-wrap: WRAP; -> Enables moving items to more lines. If set to NOWRAP the item sizes are shrinked to fit into the container
+                      (if container size is set to a fixed value).
+  justify-content: How to place content along the MAIN axis.: CENTER, SPACE-BETWEEN, FLEX-START, FLEX-END
 
- align-content: Controls the spacing between rows or columns along the CROSS axis. Only matters if the content WRAPS.: CENTER, SPACE-BETWEEN, FLEX-START, FLEX-END
- align-items: How to place content along the CROSS axis.: STRETCH, CENTER, FLEX-START, FLEX-END
- align-self: Same as align-items, but for only a single item. Must be set on item, not on the container.: STRETCH, CENTER, FLEX-START, FLEX-END
- flex: 
- flex-basis: 
- flex-direction: Switches the flow of the flex container by switching up the MAIN and CROSS axis.: ROW, COLUMN
- flex-flow: 
- flex-grow: 
- flex-shrink: 
- flex-wrap: WRAP; -> Enables moving items to more lines. If set to NOWRAP the item sizes are shrinked to fit into the container
-                     (if container size is set to a fixed value).
- justify-content: How to place content along the MAIN axis.: CENTER, SPACE-BETWEEN, FLEX-START, FLEX-END
- order: 
-
+ Must be set on Items:
+  align-self: Same as align-items, but for only a single item.: STRETCH, CENTER, FLEX-START, FLEX-END
+  flex-basis: Sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing (width/height).
+  flex-grow: Dictates how much of the available space inside the flex container the item should take up.
+             flex-grow: 2; -> The item should take up twice as much space as other items.
+  flex-shrink: If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink.
+            flex-shrink: 3; -> This element shrinks 3 times faster than the other elements.
+  flex: short for <flex-grow> <flex-shrink> <flex-basis>
+  order: Sets the order to lay out an item in a flex or grid container.
  */
 
  h1 {
@@ -48,5 +50,6 @@
 
  .special {
    align-self: flex-end;
+   flex-grow: 2;
+   /* order: 1; */
  }
- 
