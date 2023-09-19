@@ -1,0 +1,33 @@
+body {
+   margin: 0;
+}
+
+.navbar {
+   background-color: #37474f;
+   height: 50px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.left {
+   background-color: red;
+   width: 500px;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.right {
+   background-color: blue;
+   width: 500px;
+
+   display: flex;
+   justify-content: flex-end;
+}
+
+.navlink {
+   color: white;
+   font-size: 2rem;
+}
