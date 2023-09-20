@@ -1,0 +1,24 @@
+body {
+   background-color: rgb(233, 223, 255);
+   color: rgb(44, 44, 44);
+   font-family: 'Open Sans', sans-serif;
+   padding: 32px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+   color: rgb(83, 49, 156);
+}
+
+.container {
+   background-color: white;
+   width: 100%;
+   max-width: 900px;
+   border-radius: 20px;
+   padding: 0 64px 64px 64px;
+   position: relative;
+}
