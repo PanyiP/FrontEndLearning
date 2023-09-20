@@ -122,3 +122,31 @@ h1 {
    padding: 4px 16px;
    border-radius: 20px;
 }
+
+.session-card {
+   background-color: rgb(250, 247, 255);
+   text-align: center;
+   margin: 16px 0;
+   padding: 32px;
+   width: 50%;
+   border-radius: 10px;
+   text-transform: uppercase;
+}
+
+.session-card p {
+   color: rgb(44, 44, 44);
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 16px 0 0 0;
+}
+
+.session-card .number {
+   color: rgb(83, 49, 156);
+   font-size: 54px;
+   margin: 0;
+}
+
+.description {
+   margin: 16px 0;
+   line-height: 32px;
+}
