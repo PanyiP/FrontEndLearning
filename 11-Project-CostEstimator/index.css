@@ -21,4 +21,65 @@ h1 {
    border-radius: 20px;
    padding: 0 64px 64px 64px;
    position: relative;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.tabs {
+   width: 100%;
+   padding: 16px;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: rgb(200, 175, 255);
+
+   display: flex;
+   justify-content: space-around;
+}
+
+.tabs p {
+   padding: 8px;
+}
+
+.tabs .active {
+   color: rgb(83, 49, 156);
+   position: relative;
+}
+
+.tabs .active::before {
+   content: "";
+   width: 200%;
+   height: 5px;
+   background-color: rgb(83, 49, 156);
+   position: absolute;
+   bottom: -34px;
+   left: -50%;
+   z-index: 2;
+   border-radius: 10px;
+}
+
+.tabs p:hover {
+   color: rgb(83, 49, 156);
+   cursor: pointer;
+}
+
+.underline {
+   height: 4px;
+   background-color: purple;
+   width: 200px;
+   display: inline-block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+
+}
+
+.line {
+   height: 3px;
+   width: 100%;
+   position: absolute;
+   top: 100px;
+   background-color: rgb(231, 231, 231);
 }
