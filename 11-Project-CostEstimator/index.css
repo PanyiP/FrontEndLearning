@@ -285,9 +285,52 @@ h1 {
    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(51, 10, 74, 1) 36%, rgba(83, 49, 156, 1) 100%);
    width: 100%;
    border-top-left-radius: 10px;
-   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
 
    position: absolute;
    top: -24px;
    left: 0;
+}
+
+@media only screen and (max-width: 800px) {
+   .card-wrapper {
+      flex-wrap: wrap-reverse;
+   }
+
+   .card-wrapper .card {
+      width: 100%;
+      margin-top: 30px;
+   }
+
+   .session-card {
+      width: 100%;
+      box-sizing: border-box;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   body {
+      padding: 8px 16px;
+   }
+
+   h1 {
+      margin: 0 0 16px 0;
+   }
+
+   .tabs p {
+      font-size: 0.75rem;
+   }
+
+   .container {
+      padding: 0 16px;
+   }
+
+   .toggle-wrapper {
+      width: 90%;
+      justify-content: space-around;
+   }
+
+   .slider .scale ul li:nth-of-type(2n) {
+      display: none;
+   }
 }
