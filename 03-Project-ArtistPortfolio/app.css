@@ -88,3 +88,28 @@ a.active {
    margin: 0;
    font-size: 20px;
 }
+
+@media only screen and (max-width: 1100px) {
+   .card {
+      width: 100%;
+   }
+
+   .about {
+      margin: 100px 0 100px 100px;
+   }
+}
+
+@media only screen and (max-width: 750px) {
+   .card {
+      padding: 0;
+   }
+
+   .gallery {
+      padding: 0;
+   }
+
+   .about {
+      min-width: 450px;
+      margin: 100px auto;
+   }
+}
