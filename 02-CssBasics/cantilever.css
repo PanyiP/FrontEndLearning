@@ -26,3 +26,32 @@ div {
 span {
    text-shadow: 0px -5px #0c2ffb, 0px -10px #2cfcfd, 0px 5px #fb203b, 0px 10px #fefc4b;
 }
+
+@media only screen and (max-width: 1200px) {
+   div {
+      width: 75%;
+   }
+
+   h1 {
+      font-size: 70px;
+   }
+
+   h2 {
+      font-size: 30px;
+   }
+   
+   p {
+      font-size: 15px;
+   }
+
+   span {
+      text-shadow: 0px -2.5px #0c2ffb, 0px -5px #2cfcfd, 0px 2.5px #fb203b, 0px 5px #fefc4b;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   div {
+      width: 90%;
+      margin-left: 0 auto;
+   }
+}
