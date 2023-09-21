@@ -52,17 +52,17 @@ body {
    padding: 32px 0;
 }
 
-.two-column-section{
+.two-column-section {
    font-size: 2rem;
 }
 
-.two-column-section > p{
+.two-column-section>p {
    width: 50%;
    box-sizing: border-box;
    float: left;
 }
 
-.two-column-section .skills{
+.two-column-section .skills {
    width: 50%;
    box-sizing: border-box;
    float: left;
@@ -70,7 +70,7 @@ body {
    list-style: none;
 }
 
-.two-column-section .skills li{
+.two-column-section .skills li {
    width: 50%;
    box-sizing: border-box;
    float: left;
@@ -90,8 +90,8 @@ body {
 }
 
 .two-column-section .blog-posts {
-width: 50%;
-float: left;
+   width: 50%;
+   float: left;
 }
 
 .blog-posts {
@@ -166,3 +166,57 @@ footer img {
    height: 2rem;
    margin: 0 8px;
 }
+
+@media only screen and (max-width: 1300px) {
+   .hero-content, .blog .blog-content {
+      padding: 0 5%;
+   }
+}
+
+@media only screen and (max-width: 810px) {
+   .tagline {
+      font-size: 3rem;
+      margin: 0;
+   }
+
+   .two-column-section>p {
+      width: 100%;
+   }
+
+   .two-column-section .skills {
+      width: 100%;
+   }
+
+   .two-column-section .blog-posts {
+      width: 100%;
+   }
+
+   .section-heading {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .tagline {
+      font-size: 2.5rem;
+   }
+
+   .links {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   .tagline {
+      font-size: 2rem;
+   }
+
+   .section-heading {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 0;
+   }
+}
+
