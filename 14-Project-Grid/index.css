@@ -2,9 +2,48 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
+.container {
+   max-width: 90%;
+   margin: 0 auto;
+   padding: 0 16px;
+}
+
+.navbar {
+   padding: 60px 0;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar .left {
+   font-size: 32px;
+   font-weight: bold;
+}
+
+.navbar .right {
+   width: 400px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .right a {
+   text-decoration: none;
+   color: black;
+}
+
+.navbar .right a:hover {
+   text-decoration: underline;
+}
+
+.navbar .right img {
+   width: 24px;
+   height: 24px;
+}
+
 .project-grid {
    display: grid;
-   grid-template-areas: 
+   grid-template-areas:
       "eth eth alphabet"
       "eth eth traveler"
       "astro cube traveler"
@@ -14,8 +53,6 @@ body {
       "foam foam dimensional";
    gap: 16px;
    width: 100%;
-   max-width: 90%;
-   margin: 0 auto;
 }
 
 #eth {
@@ -93,22 +130,30 @@ body {
    color: white;
 }
 
+.footer {
+   text-align: center;
+   padding: 64px;
+}
+
 @media only screen and (max-width: 1100px) {
+   .container {
+      max-width: 100%;
+   }
+
    .project-grid {
-      grid-template-areas: 
+      grid-template-areas:
          "eth eth"
          "alphabet traveler"
          "astro cube"
          "insta insta"
          "cup foam"
          "dimensional dimensional";
-      max-width: 100%;
    }
 }
 
 @media only screen and (max-width: 620px) {
    .project-grid {
-      grid-template-areas: 
+      grid-template-areas:
          "eth eth"
          "alphabet alphabet"
          "traveler traveler"
@@ -122,10 +167,20 @@ body {
    .project .overlay {
       font-size: 20px;
    }
+
+   .footer {
+      padding: 32px;
+      font-size: 12px;
+   }
 }
 
 @media only screen and (max-width: 400px) {
    .project .overlay {
       font-size: 12px;
+   }
+
+   .footer {
+      padding: 16px;
+      font-size: 8px;
    }
 }
