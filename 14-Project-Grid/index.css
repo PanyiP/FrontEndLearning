@@ -41,6 +41,20 @@ body {
    height: 24px;
 }
 
+.navbar .hamburger {
+   height: 50px;
+   width: 50px;
+   display: none;
+}
+
+.navbar .bar {
+   background-color: black;
+   height: 4px;
+   width: 36px;
+   margin: 3px;
+   border-radius: 10px;
+}
+
 .project-grid {
    display: grid;
    grid-template-areas:
@@ -151,7 +165,31 @@ body {
    }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 670px) {
+   .navbar {
+      background-color: white;
+
+      padding: 16px 24px;
+      box-sizing: border-box;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+   }
+
+   .navbar .right {
+      display: none;
+   }
+
+   .navbar .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
    .project-grid {
       grid-template-areas:
          "eth eth"
@@ -162,6 +200,7 @@ body {
          "cup cup"
          "foam foam"
          "dimensional dimensional";
+      margin-top: 80px;
    }
 
    .project .overlay {
