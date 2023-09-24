@@ -1,0 +1,133 @@
+/*
+ Define animations:
+   @keyframes animationName {
+      from {
+         transform: rotate(0deg);
+         background-color: pink;
+      }
+      to {
+         transform: rotate(360deg);
+         background-color: cyan;
+      }
+   }
+
+ Apply animations on items:
+   animation-name: animationName;
+   animation-duration: 1s;
+   animation-iteration-count: infinite; -> How many times the iteration runs.
+   animation-direction: alternate; -> Play animation from start to end or vice versa.
+   animation-delay: 1s;
+   animation-timing-function: ease-out;
+   animation-play-state: paused;
+   animation: ; -> shorthand for the above parameters.
+   animation-fill-mode: Sets how CSS animation applies styles to its tartget before and after its execution.
+*/
+
+h1 {
+   /* display: inline-block; */
+   text-align: center;
+   /* animation-name: spin;
+   animation-iteration-count: infinite;
+   animation-direction: reverse;
+   animation-duration: 2s; */
+   animation: spin 2s ease 0s infinite reverse;
+}
+
+.box {
+   width: 300px;
+   height: 300px;
+   background-color: green;
+   color: white;
+   font-size: 2rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   animation-name: move;
+   animation-iteration-count: infinite;
+   animation-duration: 4s;
+   animation-fill-mode: forwards;
+}
+
+.simpleSpinner {
+   width: 200px;
+   height: 200px;
+   margin: 24px 0;
+   border-radius: 50%;
+   border: 7px solid #cfd8dc;
+   border-top-color: #3f51b5;
+
+   animation-name: spin;
+   animation-iteration-count: infinite;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes move {
+   0% {
+      transform: translateX(0);
+      background-color: red;
+   }
+
+   35% {
+      transform: translateX(500px);
+   }
+
+   50% {
+      transform: translateX(250px);
+      background-color: violet;
+   }
+
+   65% {
+      transform: translateX(500px);
+   }
+
+   100% {
+      transform: translateX(0);
+      background-color: red;
+   }
+}
+
+.loader span {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   background-color: #03a9f4;
+   border-radius: 50%;
+   margin: 0 10px;
+}
+
+.loader span:nth-child(1) {
+   animation: 1s loader infinite ease-in-out;
+}
+
+.loader span:nth-child(2) {
+   animation: 1s loader infinite ease-in-out 0.33s;
+}
+
+.loader span:nth-child(3) {
+   animation: 1s loader infinite ease-in-out 0.66s;
+}
+
+@keyframes loader {
+   0% {
+      transform: translateY(0) scale(1);
+   }
+   30% {
+      transform: translateY(-20px) scale(1.2);
+   }
+   100% {
+      transform: translateY(0) scale(1);
+   }
+}
