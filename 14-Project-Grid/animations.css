@@ -1,0 +1,46 @@
+.animateBar1 {
+   animation: flipBar1 1s;
+   animation-fill-mode: forwards;
+}
+
+.animateBar2 {
+   animation: fadeBar2 1s;
+   animation-fill-mode: forwards;
+}
+
+.animateBar3 {
+   animation: flipBar3 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes flipBar1 {
+   form {
+      transform: rotate(0);
+   }
+
+   to {
+      transform: rotate(45deg) translate(4px, 10px);
+   }
+}
+
+@keyframes fadeBar2 {
+   form {
+      transform: scaleX(1);
+      opacity: 1;
+   }
+
+   to {
+      transform: scaleX(0);
+      opacity: 0;
+   }
+}
+
+@keyframes flipBar3 {
+   form {
+      transform: rotate(0);
+   }
+
+   to {
+      transform: rotate(-45deg) translate(4px, -10px);
+   }
+}
