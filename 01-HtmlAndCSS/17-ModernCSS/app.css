@@ -1,0 +1,33 @@
+/*
+   :root representing the root html element -> Representing the <html> element, but :root has higher specificity.
+      Variables have scopes in CSS. If a variable is defined in a div, then only its childs have access to that variable.
+      Variables defined in the :root is visible for all the items in the document.
+*/
+:root {
+   --primary-bg-color: rgb(48, 119, 16);
+   --primary-color: white;
+   --spacing-sm: 8px;
+   --spacing-md: 16px;
+   --spacing-lg: 32px;
+   --spacing-xl: 64px;
+}
+
+h1 {
+   color: var(--primary-color);
+   background-color: var(--primary-bg-color);
+   text-align: center;
+}
+
+button {
+   background-color: var(--primary-bg-color);
+   border: none;
+   padding: var(--spacing-md) var(--spacing-lg);
+   border-radius: calc(1.25 * var(--spacing-md));
+   color: var(--primary-color);
+}
+
+@media only screen and (max-width: 1000px) {
+   :root {
+      --primary-bg-color: rgb(180, 35, 224);
+   }
+}
