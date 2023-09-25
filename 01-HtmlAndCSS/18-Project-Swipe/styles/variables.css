@@ -1,0 +1,43 @@
+:root {
+   /* COLORS */
+   --text-dark: #222222;
+   --text-light: #ffffff;
+   --text-grey: #adbddc;
+
+   --purple-1: #6962f7;
+   --purple-2: #7000ff;
+   --blue-1: #00d4ff;
+   --primary-accent: #0a2540;
+   --primary-button-hover: #6d7aa8;
+   --bg-white: white;
+   --bg-light: #f7f9fc;
+
+   /* FONTS */
+   --body-font: "Roboto", sans-serif;
+   --heading-font: "Anek Telugu", sans-serif;
+
+   /* HEADERS */
+   --h1-size: 94px;
+   --h2-size: 50px;
+   --h3-size: 40px;
+   --h4-size: 32px;
+   --h5-size: 28px;
+   --h6-size: 22px;
+   --h1-line-height: 108px;
+   --h2-line-height: 75px;
+
+   /* TEXT */
+   --subtitle-size: 17px;
+   --subtitle-height: 26px;
+   --p-size: 18px;
+   --p-height: 26px;
+   --secondary-text-size: 14px;
+   --secondary-text-height: 18px;
+   --button-size: 16px;
+
+   /* SPACING */
+   --spacing-sm: 8px;
+   --spacing-md: 16px;
+   --spacing-lg: 32px;
+   --spacing-xl: 64px;
+}
