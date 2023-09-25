@@ -12,6 +12,8 @@
    --bg-white: white;
    --bg-light: #f7f9fc;
 
+   --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+
    /* FONTS */
    --body-font: "Roboto", sans-serif;
    --heading-font: "Anek Telugu", sans-serif;
