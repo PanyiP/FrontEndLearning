@@ -5,9 +5,8 @@ body {
    width: 100%;
    margin: 0;
    box-sizing: border-box;
-   padding: var(--spacing-sm);
+   padding: var(--spacing-sm) 0;
    background-color: var(--bg-light);
-
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -167,6 +166,7 @@ p {
    width: 100%;
    max-width: var(--standard-width);
    padding: 0 var(--spacing-md);
+   margin: 0 0 var(--spacing-xl) 0;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -233,6 +233,17 @@ p {
    justify-content: center;
 }
 
+/* ANIMATED GRADIENT */
+#gradient-canvas {
+   width: 200%;
+   height: 970px;
+   transform: rotate(-10deg);
+   position: absolute;
+   top: -600px;
+   left: -50%;
+   z-index: -1;
+}
+
 /* HERO CONTENT */
 .hero {
    width: 100%;
@@ -290,6 +301,7 @@ p {
 .unified-platform-section {
    padding: var(--spacing-xl) 0;
    width: 100%;
+   background-color: var(--bg-light);
    display: flex;
    justify-content: center;
 }
@@ -310,6 +322,7 @@ p {
 
 /* GRAPHICS SECTION*/
 .graphics-section {
+   background-color: var(--bg-light);
    width: 100%;
    display: flex;
    justify-content: center;
@@ -374,10 +387,35 @@ p {
 /* INTEGRATION SECTION */
 .integration-section {
    color: var(--text-light);
-   background-color: var(--primary-accent);
    width: 100%;
+   padding: calc(var(--spacing-xl) * 3) 0;
    display: flex;
    justify-content: center;
+   position: relative;
+   z-index: 1;
+}
+
+.integration-section::before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: var(--primary-accent);
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transform: skewY(-10deg);
+}
+
+.integration-section::after {
+   content: "";
+   width: 100%;
+   height: 50%;
+   background-color: var(--bg-light);
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -2;
 }
 
 .integration-section .primary-button {
@@ -417,6 +455,7 @@ p {
 /* WHY SWIPE SECTION */
 .why-swipe-section {
    width: 100%;
+   padding: calc(var(--spacing-xl) * 3) 0;
    display: flex;
    justify-content: center;
 }
@@ -440,12 +479,23 @@ p {
 /* GLOBAL SECTION */
 .global-section {
    width: 100%;
-   background-color: var(--primary-accent);
    color: var(--text-light);
-   padding: calc(var(--spacing-xl) * 3) 0;
+   padding: calc(var(--spacing-xl) * 3) 0 0 0;
    display: flex;
    justify-content: center;
    position: relative;
+}
+
+.global-section::before {
+   content: "";
+   width: 100%;
+   height: 1200px;
+   background-color: var(--primary-accent);
+   position: absolute;
+   top: -32px;
+   left: 0;
+   transform: skewY(-10deg);
+   z-index: -1;
 }
 
 .global-section a {
@@ -485,8 +535,19 @@ p {
 .virtual-events-section {
    margin: var(--spacing-md) 0 0 0;
    padding: calc(var(--spacing-xl) * 2) 0;
+   position: relative;
    display: flex;
    justify-content: center;
+}
+
+.virtual-events-section::before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: var(--bg-white);
+   position: absolute;
+   top: 0;
+   z-index: -1;
 }
 
 .virtual-events-section .column-left {
