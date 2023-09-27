@@ -69,6 +69,29 @@
       width: 50%;
       margin: var(--spacing-md) 0;
    }
+
+   /* VIRTUAL EVENTS SECTION */
+   .virtual-events-section .swipe-sessions-card #sessions-logo{
+      width: 75%;
+   }
+
+   /* GETTING STARTED SECTION */
+   .getting-started-section .two-column {
+      align-items: center;
+   }
+
+   .getting-started-section .column-right {
+      flex-wrap: wrap;
+   }
+
+   .getting-started-section .column-right .icon {
+      height: 40px;
+   }
+
+   .getting-started-section .column-right .card {
+      width: 100%;
+      margin: var(--spacing-lg) 0;
+   }
 }
 
 /* MOBILE SIZE */
@@ -113,5 +136,46 @@
    .global-section .card-container .card {
       width: 100%;
       margin: var(--spacing-sm) 0;
+   }
+
+   /* VIRTUAL EVENTS SECTION */
+   .virtual-events-section .swipe-sessions-card {
+      width: 100%;
+      height: 350px;
+      margin: var(--spacing-lg) 0;
+   }
+
+   .virtual-events-section .swipe-sessions-card .secondary-text {
+      width: 100%;
+   }
+   
+   .virtual-events-section .avatars {
+      left: var(--spacing-md);
+   }
+
+   .virtual-events-section .card-bottom {
+      padding: var(--spacing-xl) 0 0 var(--spacing-md);
+   }
+
+   /* FOOTER */
+   .footer .section-container {
+      flex-wrap: wrap;
+   }
+
+   .footer #footer-logo {
+      width: 80px;
+   }
+
+   .footer .icon-link img {
+      width: 18px;
+   }
+
+   .footer .col {
+      width: 50%;
+      margin: var(--spacing-md) 0;
+   }
+
+   .footer .col a {
+      font-size: 12px;
    }
 }
