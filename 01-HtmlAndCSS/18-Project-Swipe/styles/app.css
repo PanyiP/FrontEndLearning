@@ -170,12 +170,31 @@ p {
 /* NAVBAR */
 .navbar {
    width: 100%;
+   box-sizing: border-box;
    max-width: var(--standard-width);
    padding: 0 var(--spacing-md);
    margin: 0 0 var(--spacing-xl) 0;
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.navbar .hamburger-button {
+   display: none;
+   width: 50px;
+   height: 30px;
+   background-color: rgba(250, 250, 250, 0.25);
+   border-radius: 20px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.navbar .hamburger-button .bar {
+   width: 20px;
+   height: 2px;
+   background-color: var(--bg-white);
+   margin: 2px 0;
 }
 
 .menu {

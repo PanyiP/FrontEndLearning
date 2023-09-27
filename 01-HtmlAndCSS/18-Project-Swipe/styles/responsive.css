@@ -1,11 +1,42 @@
 /* PC SIZE */
 @media only screen and (max-width: 1144px) {
+   /* GENERAL */
+   :root {
+      --h1-size: 85px;
+      --h1-line-height: 95px;
+   }
+
    .section-container {
       padding: 0 var(--spacing-md);
+   }
+
+   /* HERO SECTION */
+   .hero .hero-phone {
+      height: 600px;
+   }
+
+   .hero .column-left {
+      width: 60%;
+   }
+
+   .hero .column-right {
+      width: 40%;
    }
 }
 
 @media only screen and (max-width: 870px) {
+   /* GENERAL */
+   :root {
+      --h1-size: 70px;
+      --h1-line-height: 80px;
+   }
+
+   /* HERO SECTION */
+   .hero .hero-phone {
+      height: 500px;
+      transform: translateY(-64px);
+   }
+
    /* PARTNERS SECTION */
    .partners-grid img {
       width: 100%;
@@ -24,15 +55,43 @@
 
 /* TABLET SIZE */
 @media only screen and (max-width: 768px) {
+   /* GENERAL */
    :root {
-      --h1-size: 64px;
+      --h1-size: 50px;
       --h2-size: 42px;
       --h3-size: 34px;
       --h4-size: 24px;
       --h5-size: 20px;
       --h6-size: 16px;
-      --h1-line-height: 72px;
+      --h1-line-height: 60px;
       --h2-line-height: 42px;
+   }
+
+   /* NAVBAR */
+   .navbar .menu, .navbar .navbar-button {
+      display: none;
+   }
+
+   .navbar .hamburger-button {
+      display: flex;
+   }
+
+   /* HERO SECTION */
+   main {
+      margin: 0;
+   }
+
+   #gradient-canvas {
+      height: 900px;
+   }
+
+   .hero .two-column {
+      align-items: center;
+   }
+
+   .hero .hero-phone {
+      height: 450px;
+      transform: translateX(32px);
    }
 
    /* UNIFIED PLATFORM SECTION*/
@@ -96,6 +155,7 @@
 
 /* MOBILE SIZE */
 @media only screen and (max-width: 550px) {
+   /* GENERAL */
    .two-column {
       flex-direction: column;
    }
@@ -107,6 +167,20 @@
    .two-column .column-right {
       width: 100%;
       padding: 0;
+   }
+
+   /* NAVBAR */
+   .nav {
+      margin: 0 0 var(--spacing-lg) 0;
+   }
+
+   /* HERO */
+   #gradient-canvas {
+      height: 800px;
+   }
+
+   .hero .hero-phone-container {
+      display: none;
    }
 
    /* PARTNERS SECTION */
