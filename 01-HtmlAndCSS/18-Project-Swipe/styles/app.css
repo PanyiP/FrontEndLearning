@@ -1,4 +1,10 @@
 /* BODY */
+html {
+   width: 100%;
+   position: relative;
+   overflow-x: hidden;
+}
+
 body {
    font-family: var(--body-font);
    color: var(--text-dark);
