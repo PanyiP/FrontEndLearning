@@ -6,11 +6,13 @@
 }
 
 @media only screen and (max-width: 870px) {
+   /* PARTNERS SECTION */
    .partners-grid img {
       width: 100%;
       height: auto;
    }
 
+   /* INTEGRATION SECTION */
    .integration-section .column-left {
       width: 60%;
    }
@@ -33,16 +35,39 @@
       --h2-line-height: 42px;
    }
 
+   /* UNIFIED PLATFORM SECTION*/
    .unified-platform-section h2 {
       width: 100%;
    }
 
+   /* INTEGRATION SECTION */
    .integration-section .card-container {
       flex-direction: column;
    }
 
    .integration-section .card-container .card {
       width: 100%;
+   }
+
+   /* WHY SWIPE SECTION */
+   .why-swipe-section .card-container {
+      flex-wrap: wrap;
+   }
+
+   .why-swipe-section .card-container .card {
+      width: 50%;
+      margin: var(--spacing-md) 0;
+   }
+
+   /* GLOBAL SECTION */
+   .global-section .card-container {
+      flex-wrap: wrap;
+      margin: var(--spacing-xl) 0;
+   }
+
+   .global-section .card-container .card {
+      width: 50%;
+      margin: var(--spacing-md) 0;
    }
 }
 
@@ -60,12 +85,33 @@
       width: 100%;
       padding: 0;
    }
-   
+
+   /* PARTNERS SECTION */
    .partners-grid {
       grid-template-columns: 1fr 1fr;
    }
 
+   /* INTEGRATION SECTION */
    .integration-section .column-right {
       display: none;
+   }
+
+   /* WHY SWIPE SECTION */
+   .why-swipe-section .card-container .card {
+      width: 100%;
+   }
+
+   .why-swipe-section .card-container .card .icon {
+      height: 40px;
+   }
+
+   /* GLOBAL SECTION */
+   .global-section .two-column #globe {
+      opacity: 10%;
+   }
+
+   .global-section .card-container .card {
+      width: 100%;
+      margin: var(--spacing-sm) 0;
    }
 }
