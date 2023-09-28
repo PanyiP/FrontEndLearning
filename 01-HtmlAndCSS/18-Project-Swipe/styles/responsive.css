@@ -22,6 +22,16 @@
    .hero .column-right {
       width: 40%;
    }
+
+   /* INTEGRATION SECTION */
+   .integration-section {
+      padding: var(--spacing-xl) 0;
+   }
+
+   /* WHY SWIPE SECTION */
+   .why-swipe-section {
+      padding: calc(var(--spacing-xl) * 2) 0;
+   }
 }
 
 @media only screen and (max-width: 870px) {
@@ -50,6 +60,16 @@
 
    .integration-section .column-right {
       width: 40%;
+   }
+
+   /* GLOBAL SECTION */
+   .global-section {
+      padding: var(--spacing-xl) 0;
+   }
+
+   /* VIRTUAL EVENTS SECTION */
+   .virtual-events-section {
+      padding: var(--spacing-xl) 0;
    }
 }
 
@@ -109,6 +129,10 @@
    }
 
    /* WHY SWIPE SECTION */
+   .why-swipe-section {
+      padding: var(--spacing-xl) 0;
+   }
+
    .why-swipe-section .card-container {
       flex-wrap: wrap;
    }
@@ -130,6 +154,10 @@
    }
 
    /* VIRTUAL EVENTS SECTION */
+   .virtual-events-section {
+      padding: var(--spacing-lg) 0;
+   }
+
    .virtual-events-section .swipe-sessions-card #sessions-logo{
       width: 75%;
    }
@@ -203,6 +231,10 @@
    }
 
    /* GLOBAL SECTION */
+   .global-section {
+      padding: var(--spacing-md) 0;
+   }
+      
    .global-section .two-column #globe {
       opacity: 10%;
    }
