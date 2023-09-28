@@ -1,0 +1,60 @@
+/* GENERAL */
+:root {
+   /* COLORS */
+   --primary-bg-color: #222222;
+   --primary-txt-color: #eeeeee;
+
+   /* TEXT */
+   --primary-font-family: "Open Sans", Arial, sans-serif;
+
+   --font-size--sm: 13px;
+   --font-size--md: 20px;
+   --font-size--lg: 36px;
+   --font-size--xl: 42px;
+
+   /* SPACING */
+   --spacing-sm: 8px;
+   --spacing-md: 16px;
+   --spacing-lg: 32px;
+   --spacing-xl: 64px;
+
+   --primary-margin: 0 10%;
+}
+
+body {
+   margin: 0;
+   font-family: var(--primary-font-family);
+}
+
+.section-container {
+   margin: var(--primary-margin);
+   display: flex;
+}
+
+/* HEADER */
+header {
+   background-color: var(--primary-bg-color);
+   color: var(--primary-txt-color);
+}
+
+/* ADDRESS BAR */
+address {
+   font-style: normal;
+   font-weight: 600;
+   margin: var(--spacing-sm) 0;
+   width: 100%;
+   font-size: var(--font-size--sm);
+   display: flex;
+   flex-direction: row;
+}
+
+address iconify-icon {
+   margin: 0 4px 0 0;
+}
+
+address .phone {
+   margin: 0 20px 0 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
