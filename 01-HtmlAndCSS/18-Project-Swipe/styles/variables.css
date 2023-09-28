@@ -56,4 +56,7 @@
    --spacing-xl: 64px;
 
    --standard-width: 1144px;
+
+   /* BORDER */
+   --standard-border-radius: 20px;
 }
