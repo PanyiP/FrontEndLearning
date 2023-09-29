@@ -162,6 +162,13 @@ span {
    flex-direction: column;
 }
 
+/* HEADER SECTION*/
+header {
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+}
+
 /* ADDRESS BAR */
 address {
    font-style: normal;
