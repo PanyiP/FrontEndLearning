@@ -16,42 +16,110 @@
    <body>
       <header>
          <div class="background-dark">
-            <div class="row">
-            <address class="section-container">
-               <div class="phone">
-                  <iconify-icon icon="oi:phone"></iconify-icon>
-                  <span>+36 20 229 5288</span>
+            <div class="section-container">
+               <div class="row">
+                  <address>
+                     <div class="phone">
+                        <iconify-icon icon="oi:phone"></iconify-icon>
+                        <span>+36 20 229 5288</span>
+                     </div>
+                     <div class="email">
+                        <iconify-icon icon="oi:envelope-closed"></iconify-icon>
+                        <span>mpelectricsystems@gmail.com</span>
+                     </div>
+                  </address>
                </div>
-               <div class="email">
-                  <iconify-icon icon="oi:envelope-closed"></iconify-icon>
-                  <span>mpelectricsystems@gmail.com</span>
+            </div>
+         </div>
+         <div class="background-light">
+            <div class="section-container">
+               <div class="row">
+                  <nav>
+                     <button onclick="window.location.href='index.html';">
+                        <img
+                           src="Images/Logo_390x150_black.png"
+                           alt="MP Electric Systems Kft."
+                        />
+                     </button>
+                     <ul>
+                        <li>
+                           <a class="nav-link" href="index.html">Kezdőlap</a>
+                        </li>
+                        <li>
+                           <a class="nav-link" href="#">Villanyszerelés</a>
+                        </li>
+                        <li>
+                           <a class="nav-link" href="#">Szoftverfejlesztés</a>
+                        </li>
+                        <li><a class="nav-link" href="#">Referenciák</a></li>
+                     </ul>
+                     <div class="hamburger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                     </div>
+                  </nav>
                </div>
-            </address>
-         </div>
-         </div>
-         <div class="row background-light">
-            <nav class="section-container">
-               <button  onclick="window.location.href='index.html';">
-               <img
-                  class="company-logo"
-                  src="Images/Logo_390x150_black.png"
-                  alt="MP Electric Systems Kft."
-               /></button>
-               <ul>
-                  <li><a href="index.html">Kezdőlap</a></li>
-                  <li><a href="#">Villanyszerelés</a></li>
-                  <li><a href="#">Szoftverfejlesztés</a></li>
-                  <li><a href="#">Referenciák</a></li>
-               </ul>
-            </nav>
+            </div>
          </div>
       </header>
 
-      <main>
-         <div class="row background-dark">
-            <div class="section-container">
-               <div class="hero">
+      <nav class="mobile-nav">
+         <a class="nav-link" href="index.html">Kezdőlap</a>
+         <a class="nav-link" href="#">Villanyszerelés</a>
+         <a class="nav-link" href="#">Szoftverfejlesztés</a>
+         <a class="nav-link" href="#">Referenciák</a>
+      </nav>
 
+      <main>
+         <div class="hero">
+            <div class="section-container">
+               <div class="row">
+                  <div class="col-1">
+                     <img
+                        src="Images/Logo_390x150_white.png"
+                        alt="MP Electric Systems Kft."
+                     />
+                     <h1>Villanyszerelés és Szoftverfejlesztés</h1>
+                     <div class="row">
+                        <a
+                           class="link link-primary link-with-icon"
+                           href="#about-us">
+                           Rólunk
+                           <iconify-icon icon="oi:arrow-right"></iconify-icon>
+                        </a>
+                        <a
+                           class="link link-secondary link-with-icon"
+                           href="#contact-us">
+                           Kapcsolat
+                           <iconify-icon icon="oi:arrow-right"></iconify-icon>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="services background-dark">
+            <div class="section-container">
+               <div class="row">
+
+               </div>
+            </div>
+         </div>
+
+         <div class="about-us background-light" id="about-us">
+            <div class="section-container">
+               <div class="row">
+                  
+               </div>
+            </div>
+         </div>
+
+         <div class="contact-us background-dark" id="contact-us">
+            <div class="section-container">
+               <div class="row">
+                  
                </div>
             </div>
          </div>
@@ -64,5 +132,6 @@
       </footer>
 
       <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+      <script src="Scripts/hamburger.js"></script>
    </body>
 </html>
