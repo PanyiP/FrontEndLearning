@@ -1,6 +1,6 @@
 /* PC */
 @media only screen and (max-width: 950px) {
-   /* HERO CONTENT */
+   /* HERO SECTION */
    .hero .row .col-1 {
       width: 100%;
    }
@@ -8,7 +8,16 @@
 
 /* TABLET */
 @media only screen and (max-width: 768px) {
-   /**/
+   /* GENERAL */
+   h1 {
+      font-size: var(--font-size--h1-tb);
+   }
+
+   h2 {
+      font-size: var(--font-size--h2-tb);
+   }
+
+   /* NAV BAR */
    nav ul {
       display: none;
    }
@@ -20,7 +29,7 @@
       align-items: center;
    }
 
-   /* HERO CONTENT */
+   /* HERO SECTION */
    .hero {
       background-image: linear-gradient(
             to right,
@@ -30,13 +39,28 @@
          url(/Images/Hero_image.jpg);
    }
 
-   .hero h1 {
-      font-size: var(--font-size--h1-tb);
    }
 }
 
 /* PHONE */
 @media only screen and (max-width: 530px) {
+   /* GENERAL */
+   h1 {
+      font-size: var(--font-size--h1-ph-md);
+   }
+   
+   h2 {
+      font-size: var(--font-size--h2-ph-md);
+   }
+
+   p {
+      font-size: var(--font-size--sm);
+   }
+
+   span {
+      font-size: var(--font-size--sm);
+   }
+   
    /* ADDRESS BAR */
    address {
       flex-direction: column;
@@ -44,7 +68,7 @@
       align-items: center;
    }
 
-   /* HERO CONTENT */
+   /* HERO SECTION */
    .hero {
       background-image: linear-gradient(
             to right,
@@ -52,10 +76,6 @@
             rgba(34, 34, 34, 0)
          ),
          url(/Images/Hero_image.jpg);
-   }
-
-   .hero h1 {
-      font-size: var(--font-size--h1-ph-md);
    }
 
    .hero .row .col-1 .row {
@@ -66,8 +86,12 @@
 }
 
 @media only screen and (max-width: 400px) {
-   /* HERO CONTENT */
-   .hero h1 {
+   /* GENERAL */
+   h1 {
       font-size: var(--font-size--h1-ph-sm);
+   }
+   
+   h2 {
+      font-size: var(--font-size--h2-ph-sm);
    }
 }

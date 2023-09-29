@@ -11,11 +11,11 @@
 
    --primary-link-bg-color: #004ffe;
    --primary-link-txt-color: #ffffff;
-   --primary-link-box-shadow: -15px -15px 0px 0px rgba(0,79,254,0.4);
+   --primary-link-box-shadow: -15px -15px 0px 0px rgba(0, 79, 254, 0.4);
 
    --secondary-link-bg-color: #ffffff;
    --secondary-link-txt-color: #004ffe;
-   --secondary-link-box-shadow: 15px 15px 0px 0px rgba(255,255,255,0.2);
+   --secondary-link-box-shadow: 15px 15px 0px 0px rgba(255, 255, 255, 0.2);
 
    --nav-link-txt-color: rgb(34, 34, 34, 1);
    --nav-link-hover-txt-color: rgb(34, 34, 34, 0.5);
@@ -24,14 +24,19 @@
    --primary-font-family: "Open Sans", Arial, sans-serif;
 
    --font-size--sm: 0.8125rem;
-   --font-size--md: 1.25rem;
-   --font-size--lg: 2.25rem;
-   --font-size--xl: 2.625rem;
+   --font-size--md: 1rem;
+   --font-size--lg: 1.25rem;
+   --font-size--xl: 1.5rem;
 
    --font-size--h1-pc: 4rem;
    --font-size--h1-tb: 3rem;
    --font-size--h1-ph-md: 2rem;
    --font-size--h1-ph-sm: 1.5rem;
+
+   --font-size--h2-pc: 2rem;
+   --font-size--h2-tb: 1.75rem;
+   --font-size--h2-ph-md: 1.5rem;
+   --font-size--h2-ph-sm: 1rem;
 
    /* SPACING */
    --spacing-sm: 8px;
@@ -58,12 +63,33 @@ body {
    font-family: var(--primary-font-family);
 }
 
+main {
+   padding-top: 100px;
+}
+
 h1 {
    font-size: var(--font-size--h1-pc);
 }
 
+h2 {
+   font-size: var(--font-size--h2-pc);
+}
+
+p {
+   font-size: var(--font-size--md);
+}
+
+span {
+   font-size: var(--font-size--md);
+}
+
 .background-light {
    background-color: var(--white-color);
+   color: var(--secondary-txt-color);
+}
+
+.background-gray {
+   background-color: var(--secondary-bg-color);
    color: var(--secondary-txt-color);
 }
 
@@ -151,6 +177,10 @@ address iconify-icon {
    margin: 0 4px 0 0;
 }
 
+address span {
+   font-size: var(--font-size--sm);
+}
+
 address .phone {
    margin: 0 20px 0 0;
    display: flex;
@@ -221,7 +251,9 @@ nav .hamburger {
    display: none;
 }
 
-nav .bar1, .bar2, .bar3 {
+nav .bar1,
+.bar2,
+.bar3 {
    background-color: var(--secondary-txt-color);
    height: 4px;
    width: 36px;
@@ -302,10 +334,10 @@ nav .bar1, .bar2, .bar3 {
 
 .mobile-nav-open {
    transform: translatex(-160px);
-   transition: 1s ;
+   transition: 1s;
 }
 
-/* HERO CONTENT */
+/* HERO SECTION */
 .hero {
    color: var(--primary-txt-color);
    background-image: linear-gradient(
@@ -339,4 +371,22 @@ nav .bar1, .bar2, .bar3 {
 .hero .row .col-1 .row {
    justify-content: flex-start;
    align-items: flex-start;
+}
+/* FOOTER SECTION */
+.footer {
+   padding: var(--spacing-md) 0;
+}
+
+.footer .col-2:nth-child(2) {
+   align-items: flex-end;
+}
+
+/* FOOTNOTES SECTION*/
+.footnotes {
+   padding: var(--spacing-md) 0;
+   color: rgba(255, 255, 255, 0.226);
+}
+
+.footnotes p {
+   margin: 0;
 }
