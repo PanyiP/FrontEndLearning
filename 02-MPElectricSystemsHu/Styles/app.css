@@ -8,6 +8,7 @@
    --secondary-txt-color: #222222;
 
    --white-color: #ffffff;
+   --yellow-color: #ffd300;
 
    --primary-link-bg-color: #004ffe;
    --primary-link-txt-color: #ffffff;
@@ -23,6 +24,7 @@
    /* TEXT */
    --primary-font-family: "Open Sans", Arial, sans-serif;
 
+   --font-size--xs: 0.5rem;
    --font-size--sm: 0.8125rem;
    --font-size--md: 1rem;
    --font-size--lg: 1.25rem;
@@ -160,6 +162,50 @@ span {
    width: 50%;
    display: flex;
    flex-direction: column;
+}
+
+/* CARDS */
+.card-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.card {
+   width: 45%;
+   box-sizing: border-box;
+   background-color: var(--primary-bg-color);
+   color: var(--primary-txt-color);
+   padding: var(--spacing-md);
+   margin: var(--spacing-md);
+   border-radius: 10px;
+   box-shadow: 0 0 10px var(--secondary-txt-color);
+   display: flex;
+   flex-direction: column;
+}
+
+.card .subtitle {
+   border-bottom: 1px solid var(--primary-txt-color);
+   padding-bottom: var(--spacing-sm);
+   margin-top: 30px;
+   position: relative;
+}
+
+.card .subtitle::before {
+   content: "";
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 30px 30px 0 0;
+   border-color: var(--white-color) transparent transparent transparent;
+   position: absolute;
+   top: -30px;
+}
+
+.card a {
+   align-self: center;
+   margin: var(--spacing-lg) 0;
 }
 
 /* HEADER SECTION*/
@@ -379,6 +425,48 @@ nav .bar1,
    justify-content: flex-start;
    align-items: flex-start;
 }
+
+/* SERVICES SECTION */
+.services {
+   padding: var(--spacing-xl) 0;
+}
+
+.services .card .subtitle {
+   color: var(--yellow-color);
+   border-bottom: 1px solid var(--yellow-color);
+}
+
+.card .subtitle::before {
+   border-color: var(--yellow-color) transparent transparent transparent;
+}
+
+.services .card li {
+   font-size: var(--font-size--xl);
+}
+
+.services .card:nth-child(1) ul {
+   list-style: url("/Images/Lightning.svg");
+}
+
+.services .card:nth-child(2) ul {
+   list-style: none;
+}
+
+.services .card:nth-child(2) ul li {
+   position: relative;
+}
+
+.services .card:nth-child(2) li::before {
+   content: '';
+   display: inline-block;
+   background-image: url("/Images/laptop-with-cursor-26.png");
+   height: 26px;
+   width: 26px;
+   position: absolute;
+   top: 8px;
+   left: -32px;
+ }
+
 /* FOOTER SECTION */
 .footer {
    padding: var(--spacing-md) 0;
