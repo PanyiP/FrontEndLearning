@@ -56,10 +56,6 @@ html {
    scroll-behavior: smooth;
 }
 
-html:not([data-scroll='0']) {
-   /* scrolling - https://css-tricks.com/styling-based-on-scroll-position/ */
-}
-
 body {
    margin: 0;
    font-family: var(--primary-font-family);
