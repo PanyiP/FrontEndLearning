@@ -6,6 +6,35 @@
    }
 }
 
+@media only screen and (max-width: 820px) {
+   /* FOOTER SECTION */
+   .footer .grid {
+      grid-template-areas:
+         "location contact social"
+         "privacy privacy social";
+   }
+
+   .footer .privacy {
+      grid-area: privacy;
+      text-align: start;
+   }
+
+   .facebook-link:before {
+      top: 0px;
+      left: 0px
+   }
+
+   .linkedin-link:before {
+      top: 40px;
+      left: 0px;
+   }
+
+   .google-link:before {
+      top: 80px;
+      left: 0px;
+   }
+}
+
 /* TABLET */
 @media only screen and (max-width: 768px) {
    /* GENERAL */
@@ -47,16 +76,43 @@
    .services .card {
       width: 100%;
    }
+}
+
+@media only screen and (max-width: 630px) {
+   /* FOOTER SECTION */
+   .footer .grid {
+      grid-template-areas:
+         "location contact"
+         "privacy social";
+   }
+
+   .footer .social {
+      height: 40px;
+   }
+
+   .facebook-link:before {
+      top: 0px;
+      left: 0px;
+   }
+
+   .linkedin-link:before {
+      top: 0px;
+      left: 40px;
+   }
+
+   .google-link:before {
+      top: 0px;
+      left: 80px;
    }
 }
 
 /* PHONE */
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 550px) {
    /* GENERAL */
    h1 {
       font-size: var(--font-size--h1-ph-md);
    }
-   
+
    h2 {
       font-size: var(--font-size--h2-ph-md);
    }
@@ -68,7 +124,7 @@
    span {
       font-size: var(--font-size--sm);
    }
-   
+
    /* ADDRESS BAR */
    address {
       flex-direction: column;
@@ -91,6 +147,15 @@
       justify-content: flex-start;
       align-items: flex-start;
    }
+
+   /* FOOTER SECTION */
+   .footer .grid {
+      grid-template-areas:
+         "contact"
+         "location"
+         "privacy"
+         "social";
+   }
 }
 
 @media only screen and (max-width: 400px) {
@@ -98,7 +163,7 @@
    h1 {
       font-size: var(--font-size--h1-ph-sm);
    }
-   
+
    h2 {
       font-size: var(--font-size--h2-ph-sm);
    }
@@ -111,5 +176,10 @@
    .services .card:nth-child(2) li::before {
       position: absolute;
       top: 0px;
-    }
+   }
+
+   /* FOOTNOTES SECTION*/
+   .footnotes p {
+      font-size: var(--font-size--xs);
+   }
 }

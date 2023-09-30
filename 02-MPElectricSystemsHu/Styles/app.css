@@ -470,10 +470,80 @@ nav .bar1,
 /* FOOTER SECTION */
 .footer {
    padding: var(--spacing-md) 0;
+   font-size: var(--font-size--sm);
 }
 
-.footer .col-2:nth-child(2) {
-   align-items: flex-end;
+.footer .grid {
+   display: grid;
+   gap: 20px;
+   grid-template-areas:
+      "location contact social"
+      "location contact privacy";
+}
+
+.footer .location {
+   grid-area: location;
+}
+
+.footer .contact {
+   grid-area: contact;
+}
+
+.footer .social {
+   position: relative;
+   grid-area: social;
+}
+
+.footer .privacy {
+   grid-area: privacy;
+}
+
+.facebook-link:before {
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 30px;
+   height: 30px;
+   background: url(/Images/Logos/Facebook_Logo_Primary.png);
+   background-size: cover;
+   transition: 0.2s ease;
+}
+
+.facebook-link:hover:before {
+   transform: scale(1.2);
+}
+
+.linkedin-link:before {
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 40px;
+   width: 30px;
+   height: 30px;
+   background: url(/Images/Logos/LI-In-Bug.png);
+   background-size: cover;
+   transition: 0.2s ease;
+}
+
+.linkedin-link:hover:before {
+   transform: scale(1.2);
+}
+
+.google-link:before {
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 80px;
+   width: 30px;
+   height: 30px;
+   background: url(/Images/Logos/Google-Logo.png);
+   background-size: cover;
+   transition: 0.2s ease;
+}
+
+.google-link:hover:before {
+   transform: scale(1.2);
 }
 
 /* FOOTNOTES SECTION*/
