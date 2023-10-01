@@ -136,6 +136,30 @@ span {
    box-shadow: var(--secondary-link-box-shadow);
 }
 
+/* GDPR COOKIE SETTINGS BUTTON */
+.gdpr-cookie-settings {
+   position: fixed;
+   left: 10px;
+   bottom: 10px;
+   background-color: var(--primary-bg-color);
+   text-decoration: none;
+   z-index: 10;
+}
+
+.gdpr-cookie-settings:hover::after {
+   content: "Süti beállítások módosítása";
+   color: var(--primary-txt-color);
+   background-color: var(--primary-bg-color);
+   padding: var(--spacing-sm);
+   position: relative;
+   top: -15px; 
+}
+
+.gdpr-cookie-settings img {
+   width: 32px;
+   padding: var(--spacing-sm);
+}
+
 /* SECTION POSITIONING */
 .section-container {
    box-sizing: border-box;
