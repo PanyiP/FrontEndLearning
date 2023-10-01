@@ -1,43 +1,35 @@
 /* PC */
+@media only screen and (max-width: 1300px) {
+   /* GENERAL */
+   :root {
+      --primary-margin: 0 10%;
+   }
+
+   /* ABOUT US SECTION */
+   #about-us-image {
+      left: -250px;
+   }
+}
+
 @media only screen and (max-width: 950px) {
    /* HERO SECTION */
    .hero .row .col-1 {
       width: 100%;
    }
-}
 
-@media only screen and (max-width: 820px) {
-   /* FOOTER SECTION */
-   .footer .grid {
-      grid-template-areas:
-         "location contact social"
-         "privacy privacy social";
-   }
-
-   .footer .privacy {
-      grid-area: privacy;
-      text-align: start;
-   }
-
-   .facebook-link:before {
-      top: 0px;
-      left: 0px
-   }
-
-   .linkedin-link:before {
-      top: 40px;
-      left: 0px;
-   }
-
-   .google-link:before {
-      top: 80px;
-      left: 0px;
+   /* ABOUT US SECTION */
+   #about-us-image {
+      left: -350px;
    }
 }
 
 /* TABLET */
 @media only screen and (max-width: 768px) {
    /* GENERAL */
+   :root {
+      --primary-margin: 0 5%;
+   }
+
    h1 {
       font-size: var(--font-size--h1-tb);
    }
@@ -76,33 +68,53 @@
    .services .card {
       width: 100%;
    }
-}
 
-@media only screen and (max-width: 630px) {
+   /* ABOUT US SECTION */
+   .about-us .card-container {
+      width: 100%;
+      justify-content: center;
+   }
+
+   .about-us .card {
+      width: 80%;
+   }
+
+   .about-us .image-container {
+      display: none;
+   }
+
    /* FOOTER SECTION */
    .footer .grid {
       grid-template-areas:
-         "location contact"
-         "privacy social";
+         "location contact social"
+         "privacy privacy social";
    }
 
-   .footer .social {
-      height: 40px;
+   .footer .privacy {
+      grid-area: privacy;
+      text-align: start;
    }
 
    .facebook-link:before {
       top: 0px;
-      left: 0px;
+      left: 0px
    }
 
    .linkedin-link:before {
-      top: 0px;
-      left: 40px;
+      top: 40px;
+      left: 0px;
    }
 
    .google-link:before {
-      top: 0px;
-      left: 80px;
+      top: 80px;
+      left: 0px;
+   }
+}
+
+@media only screen and (max-width: 630px) {
+   /* ABOUT US SECTION */
+   .about-us .card {
+      width: 100%;
    }
 }
 
@@ -148,6 +160,39 @@
       align-items: flex-start;
    }
 
+   /* ABOUT US SECTION */
+   .about-us .card {
+      width: 100%;
+   }
+
+   /* FOOTER SECTION */
+   .footer .grid {
+      grid-template-areas:
+         "location contact"
+         "privacy social";
+   }
+
+   .footer .social {
+      height: 40px;
+   }
+
+   .facebook-link:before {
+      top: 0px;
+      left: 0px;
+   }
+
+   .linkedin-link:before {
+      top: 0px;
+      left: 40px;
+   }
+
+   .google-link:before {
+      top: 0px;
+      left: 80px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
    /* FOOTER SECTION */
    .footer .grid {
       grid-template-areas:
