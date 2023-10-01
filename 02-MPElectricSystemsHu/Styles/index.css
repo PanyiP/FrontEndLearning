@@ -53,7 +53,7 @@
 }
 
 .services .card:nth-child(1) ul {
-   list-style: url("/Images/Lightning.svg");
+   list-style: url("/Images/Icons/Lightning.svg");
 }
 
 .services .card:nth-child(2) ul {
@@ -67,7 +67,7 @@
 .services .card:nth-child(2) li::before {
    content: '';
    display: inline-block;
-   background-image: url("/Images/laptop-with-cursor-26.png");
+   background-image: url("/Images/Icons/laptop-with-cursor-26.png");
    height: 26px;
    width: 26px;
    position: absolute;
