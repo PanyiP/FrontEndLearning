@@ -21,6 +21,9 @@
    --nav-link-txt-color: rgb(34, 34, 34, 1);
    --nav-link-hover-txt-color: rgb(34, 34, 34, 0.5);
 
+   --nav-link-light-txt-color: rgb(255, 255, 255, 1);
+   --nav-link-light-hover-txt-color: rgb(255, 255, 255, 0.5);
+
    /* TEXT */
    --primary-font-family: "Open Sans", Arial, sans-serif;
 
@@ -278,7 +281,7 @@ nav ul li {
    margin: 0 var(--spacing-sm);
 }
 
-.nav-link {
+.nav-link-dark {
    margin: inherit;
    padding: 0;
    text-decoration: none;
@@ -288,8 +291,22 @@ nav ul li {
    transition: 0.5s ease;
 }
 
-.nav-link:hover {
+.nav-link-dark:hover {
    color: var(--nav-link-hover-txt-color);
+}
+
+.nav-link-light {
+   margin: inherit;
+   padding: 0;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: var(--font-size--sm);
+   color: var(--nav-link-light-txt-color);
+   transition: 0.5s ease;
+}
+
+.nav-link-light:hover {
+   color: var(--nav-link-light-hover-txt-color);
 }
 
 /* MOBILE NAV */
