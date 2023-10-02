@@ -5,19 +5,19 @@
       --primary-margin: 0 10%;
    }
 
-   /* ABOUT US SECTION */
+   /* INDEX - ABOUT US SECTION */
    #about-us-image {
       left: -250px;
    }
 }
 
 @media only screen and (max-width: 950px) {
-   /* HERO SECTION */
+   /* INDEX - HERO SECTION */
    .hero .row .col-1 {
       width: 100%;
    }
 
-   /* ABOUT US SECTION */
+   /* INDEX - ABOUT US SECTION */
    #about-us-image {
       left: -350px;
    }
@@ -50,7 +50,7 @@
       align-items: center;
    }
 
-   /* HERO SECTION */
+   /* INDEX - HERO SECTION */
    .hero {
       background-image: linear-gradient(
             to right,
@@ -60,7 +60,7 @@
          url(/Images/Hero_image.jpg);
    }
 
-   /* SERVICES SECTION */
+   /* INDEX - SERVICES SECTION */
    .services .card-container {
       flex-wrap: wrap;
    }
@@ -69,7 +69,7 @@
       width: 100%;
    }
 
-   /* ABOUT US SECTION */
+   /* INDEX - ABOUT US SECTION */
    .about-us .card-container {
       width: 100%;
       justify-content: center;
@@ -83,7 +83,7 @@
       display: none;
    }
 
-   /* FOOTER SECTION */
+   /* INDEX - FOOTER SECTION */
    .footer .grid {
       grid-template-areas:
          "location contact social"
@@ -109,10 +109,15 @@
       top: 80px;
       left: 0px;
    }
+
+   /* FAQ SECTION */
+   .faq-grid {
+      grid-template-columns: 1fr;
+   }
 }
 
 @media only screen and (max-width: 630px) {
-   /* ABOUT US SECTION */
+   /* INDEX - ABOUT US SECTION */
    .about-us .card {
       width: 100%;
    }
@@ -144,7 +149,7 @@
       align-items: center;
    }
 
-   /* HERO SECTION */
+   /* INDEX - HERO SECTION */
    .hero {
       background-image: linear-gradient(
             to right,
@@ -160,7 +165,7 @@
       align-items: flex-start;
    }
 
-   /* ABOUT US SECTION */
+   /* INDEX - ABOUT US SECTION */
    .about-us .card {
       width: 100%;
    }
@@ -217,7 +222,7 @@
       line-height: var(--font-size--md);
    }
 
-   /* SERVICES SECTION */
+   /* INDEX - SERVICES SECTION */
    .services .card:nth-child(2) li::before {
       position: absolute;
       top: 0px;
