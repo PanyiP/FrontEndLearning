@@ -236,6 +236,7 @@ header {
    position: fixed;
    width: 100%;
    z-index: 2;
+   box-shadow: 0 0 5px var(--secondary-txt-color);
 }
 
 /* ADDRESS BAR */
@@ -331,6 +332,10 @@ nav ul li {
 
 .nav-link-light:hover {
    color: var(--nav-link-light-hover-txt-color);
+}
+
+.nav-link-active {
+   font-weight: bold;
 }
 
 /* MOBILE NAV */
