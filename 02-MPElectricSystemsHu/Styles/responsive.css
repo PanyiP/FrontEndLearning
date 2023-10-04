@@ -1,4 +1,11 @@
 /* PC */
+@media only screen and (max-width: 1600px) {
+   /* ELECTRICIAN REFERENCES SECTION */
+   .electrician-references .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
 @media only screen and (max-width: 1300px) {
    /* GENERAL */
    :root {
@@ -8,6 +15,13 @@
    /* INDEX - ABOUT US SECTION */
    #about-us-image {
       left: -250px;
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+   /* ELECTRICIAN REFERENCES SECTION */
+   .electrician-references .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
    }
 }
 
@@ -127,7 +141,7 @@
       left: 0px;
    }
 
-   /* FAQ SECTION */
+   /* ELECTRICIAN - FAQ SECTION */
    .faq-grid {
       grid-template-columns: 1fr;
    }
@@ -137,6 +151,19 @@
    /* INDEX - ABOUT US SECTION */
    .about-us .card {
       width: 100%;
+   }
+
+   /* ELECTRICIAN REFERENCES SECTION */
+   .electrician-references .gallery-container {
+      margin: var(--spacing-sm) 0;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .electrician-references .gallery-grid {
+      grid-template-columns: repeat(1, 1fr);
    }
 
    /* ELECTRICIAN PARTNERS SECTION */
