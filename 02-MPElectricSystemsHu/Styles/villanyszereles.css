@@ -55,6 +55,23 @@
    font-size: var(--font-size--md);
 }
 
+/* ELECTRICIAN REFERENCES SECTION */
+.electrician-references .gallery {
+   margin: 10px 40px;
+}
+
+.electrician-references .gallery img {
+   width: 200px;
+   height: 200px;
+   transition: 1s;
+   padding: 5px;
+}
+
+.electrician-references .gallery img:hover {
+   filter: drop-shadow(4px 4px 6px gray);
+   transform: scale(1.1);
+}
+
 
 /* FAQ SECTION */
 .faq {
