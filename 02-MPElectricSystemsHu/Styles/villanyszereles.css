@@ -72,6 +72,11 @@
    display: flex;
    flex-flow: column;
    justify-content: flex-start;
+   align-items: center;
+}
+
+.electrician-references .gallery-container p {
+   text-align: center;
 }
 
 .electrician-references .gallery-container h3 {

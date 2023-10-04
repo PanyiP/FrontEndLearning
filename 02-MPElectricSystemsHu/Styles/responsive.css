@@ -156,10 +156,7 @@
    /* ELECTRICIAN REFERENCES SECTION */
    .electrician-references .gallery-container {
       margin: var(--spacing-sm) 0;
-      display: flex;
-      flex-flow: column;
       justify-content: center;
-      align-items: center;
    }
 
    .electrician-references .gallery-grid {
