@@ -21,6 +21,23 @@
    #about-us-image {
       left: -350px;
    }
+
+   /* ELECTRICIAN - SERVICES SECTION */
+   .electrician-services-grid {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .electrician-services-grid ul {
+      min-width: 50%;
+   }
+
+   .electrician-services .card-container {
+      flex-wrap: wrap;
+   }
+
+   .electrician-services .card {
+      width: 100%;
+   }
 }
 
 /* TABLET */
@@ -121,6 +138,11 @@
    .about-us .card {
       width: 100%;
    }
+
+   /* ELECTRICIAN PARTNERS SECTION */
+   .electrician-partners .ep-grid {
+      grid-template-columns: 1fr;
+   }
 }
 
 /* PHONE */
@@ -194,6 +216,15 @@
    .google-link:before {
       top: 0px;
       left: 80px;
+   }
+
+   /* ELECTRICIAN - SERVICES SECTION */
+   .electrician-services-grid {
+      grid-template-columns: 1fr;
+   }
+
+   .electrician-services-grid ul {
+      min-width: 100%;
    }
 }
 

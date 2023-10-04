@@ -1,8 +1,64 @@
+/* ELECTRICIAN SERVICES */
+.electrician-services {
+   padding: var(--spacing-xl) 0;
+}
+
+.electrician-services h2 {
+   margin-bottom: 0;
+}
+
+.electrician-services-grid {
+   margin-top: var(--spacing-md);
+   margin-bottom: var(--spacing-xl);
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.electrician-services-grid ul {
+   min-width: 33%;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0 var(--spacing-lg);
+}
+
+.electrician-services .card-container {
+   flex-wrap: wrap;
+   display: flex;
+   flex-direction: row;
+   /* justify-content: space-between; */
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.electrician-services .card .subtitle {
+   color: var(--yellow-color);
+   border-bottom: 1px solid var(--yellow-color);
+}
+
+.electrician-services .card .subtitle::before {
+   border-color: var(--yellow-color) transparent transparent transparent;
+}
+
+.electrician-services .card ul {
+   list-style: url("/Images/Icons/Lightning.svg");
+}
+
+.electrician-services .card ul li {
+   font-size: var(--font-size--xl);
+}
+
+.electrician-services .card h3 {
+   font-size: var(--font-size--h3-pc);
+}
+
+.electrician-services .card p {
+   font-size: var(--font-size--md);
+}
 
 
 /* FAQ SECTION */
 .faq {
-   padding: var(--spacing-lg) 0;
+   padding: var(--spacing-xl) 0;
 }
 
 .faq-grid {
