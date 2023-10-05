@@ -1,6 +1,6 @@
 /* PC */
 @media only screen and (max-width: 1600px) {
-   /* ELECTRICIAN REFERENCES SECTION */
+   /* ELECTRICIAN - REFERENCES SECTION */
    .electrician-references .gallery-grid {
       grid-template-columns: repeat(3, 1fr);
    }
@@ -16,12 +16,36 @@
    #about-us-image {
       left: -250px;
    }
+
+   /* ELECTRICIAN - TESTIMONIALS SECTION */
+   .testimonials {
+      height: 600px;
+   }
+
+   .testimonials .review-row {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .testimonials .link {
+      right: 100px;
+   }
 }
 
 @media only screen and (max-width: 1100px) {
-   /* ELECTRICIAN REFERENCES SECTION */
+   /* ELECTRICIAN - REFERENCES SECTION */
    .electrician-references .gallery-grid {
       grid-template-columns: repeat(2, 1fr);
+   }
+
+   /* ELECTRICIAN - TESTIMONIALS SECTION */
+   .testimonials {
+      height: 550px;
+   }
+
+   .testimonials .review-row {
+      grid-template-columns: repeat(2, 1fr);
+      left: 50px;
+      right: 50px;
    }
 }
 
@@ -141,6 +165,16 @@
       left: 0px;
    }
 
+   /* ELECTRICIAN - TESTIMONIALS SECTION */
+   .testimonials .review-row {
+      left: 25px;
+      right: 25px;
+   }
+
+   .testimonials .link {
+      right: 25px;
+   }
+
    /* ELECTRICIAN - FAQ SECTION */
    .faq-grid {
       grid-template-columns: 1fr;
@@ -153,7 +187,7 @@
       width: 100%;
    }
 
-   /* ELECTRICIAN REFERENCES SECTION */
+   /* ELECTRICIAN - REFERENCES SECTION */
    .electrician-references .gallery-container {
       margin: var(--spacing-sm) 0;
       justify-content: center;
@@ -163,9 +197,15 @@
       grid-template-columns: repeat(1, 1fr);
    }
 
-   /* ELECTRICIAN PARTNERS SECTION */
+   /* ELECTRICIAN - PARTNERS SECTION */
    .electrician-partners .ep-grid {
       grid-template-columns: 1fr;
+   }
+
+   /* ELECTRICIAN - TESTIMONIALS SECTION */
+   .testimonials {
+      padding: var(--spacing-md) 0;
+      height: 750px;
    }
 }
 
@@ -253,6 +293,23 @@
 }
 
 @media only screen and (max-width: 480px) {
+   /* ELECTRICIAN - TESTIMONIALS SECTION */
+   .testimonials {
+      padding: var(--spacing-md) 0;
+      height: 1000px;
+   }
+
+   .testimonials .link {
+      top: 100px;
+      left: 25px;
+      right: auto;
+   }
+
+   .testimonials .review-row {
+      grid-template-columns: repeat(1, 1fr);
+      top: 200px;
+   }
+
    /* FOOTER SECTION */
    .footer .grid {
       grid-template-areas:

@@ -102,6 +102,54 @@
 /* TESTIMONIALS SECTION */
 .testimonials {
    padding: var(--spacing-xl) 0;
+   position: relative;
+   height: 400px;
+}
+
+.testimonials a {
+   text-decoration: none;
+}
+
+.testimonials a:hover .review-card {
+   transform: scale(1.05);
+   box-shadow: 0 0 15px var(--white-color);
+}
+
+.testimonials .review-row {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   position: absolute;
+   top: 150px;
+   left: 100px;
+   right: 100px;
+}
+
+.testimonials .review-card {
+   background-color: var(--secondary-bg-color);
+   color: var(--secondary-txt-color);
+   padding: var(--spacing-lg);
+   margin: var(--spacing-md);
+   border-radius: 10px;
+   box-shadow: 0 0 5px var(--white-color);
+   transition: all 0.2s ease;
+}
+
+.testimonials .review-card span {
+   font-weight: bold;
+}
+
+.testimonials .review-card .rating {
+   margin-top: var(--spacing-sm);
+}
+
+.testimonials .review-card .checked {
+   color: orange;
+}
+
+.testimonials .link {
+   position: absolute;
+   top: var(--spacing-xl);
+   right: 20%;
 }
 
 /* PARTNERS SECTION */
