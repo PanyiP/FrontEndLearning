@@ -233,6 +233,62 @@ span {
    margin: var(--spacing-lg) 0;
 }
 
+/* ELECTRICIAN & SOFTWARE REFERENCES SECTION */
+.references {
+   padding: var(--spacing-xl) 0;
+}
+
+.references .gallery-grid {
+   display: grid;
+   column-gap: var(--spacing-md);
+   row-gap: 0;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.references .gallery-container {
+   margin: var(--spacing-lg) 0;
+   display: flex;
+   flex-flow: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.references .gallery-container p {
+   text-align: center;
+}
+
+.references .gallery-container h3 {
+   margin-bottom: 0;
+   text-align: center;
+}
+
+.references .gallery-container h3 a {
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.references .gallery-container h3 a:hover {
+   text-decoration: underline;
+   color: var(--nav-link-hover-txt-color);
+}
+
+.references .gallery {
+   margin: 10px 40px;
+}
+
+.references .gallery img {
+   width: 200px;
+   height: 200px;
+   transition: 1s;
+   padding: 5px;
+   object-fit: cover;
+}
+
+.references .gallery img:hover {
+   filter: drop-shadow(4px 4px 6px gray);
+   transform: scale(1.1);
+}
+
 /* HEADER SECTION*/
 header {
    position: fixed;

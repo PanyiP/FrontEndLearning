@@ -55,50 +55,6 @@
    font-size: var(--font-size--md);
 }
 
-/* ELECTRICIAN REFERENCES SECTION */
-.electrician-references {
-   padding: var(--spacing-xl) 0;
-}
-
-.electrician-references .gallery-grid {
-   display: grid;
-   column-gap: var(--spacing-md);
-   row-gap: 0;
-   grid-template-columns: repeat(4, 1fr);
-}
-
-.electrician-references .gallery-container {
-   margin: var(--spacing-lg) 0;
-   display: flex;
-   flex-flow: column;
-   justify-content: flex-start;
-   align-items: center;
-}
-
-.electrician-references .gallery-container p {
-   text-align: center;
-}
-
-.electrician-references .gallery-container h3 {
-   margin-bottom: 0;
-}
-
-.electrician-references .gallery {
-   margin: 10px 40px;
-}
-
-.electrician-references .gallery img {
-   width: 200px;
-   height: 200px;
-   transition: 1s;
-   padding: 5px;
-}
-
-.electrician-references .gallery img:hover {
-   filter: drop-shadow(4px 4px 6px gray);
-   transform: scale(1.1);
-}
-
 /* TESTIMONIALS SECTION */
 .testimonials {
    padding: var(--spacing-xl) 0;
