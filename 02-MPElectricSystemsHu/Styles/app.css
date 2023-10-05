@@ -264,11 +264,11 @@ span {
 
 .references .gallery-container h3 a {
    text-decoration: none;
+   color: var(--nav-link-txt-color);
    transition: all 0.2s ease;
 }
 
 .references .gallery-container h3 a:hover {
-   text-decoration: underline;
    color: var(--nav-link-hover-txt-color);
 }
 
