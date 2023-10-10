@@ -9,6 +9,7 @@
 
    --white-color: #ffffff;
    --yellow-color: #ffd300;
+   --yellow-color-rgba: rgba(255, 211, 0, 1);
 
    --primary-link-bg-color: #004ffe;
    --primary-link-txt-color: #ffffff;
@@ -18,11 +19,11 @@
    --secondary-link-txt-color: #004ffe;
    --secondary-link-box-shadow: 15px 15px 0px 0px rgba(255, 255, 255, 0.2);
 
-   --nav-link-txt-color: rgb(34, 34, 34, 1);
-   --nav-link-hover-txt-color: rgb(34, 34, 34, 0.5);
+   --nav-link-txt-color: rgba(34, 34, 34, 1);
+   --nav-link-hover-txt-color: rgba(34, 34, 34, 0.7);
 
-   --nav-link-light-txt-color: rgb(255, 255, 255, 1);
-   --nav-link-light-hover-txt-color: rgb(255, 255, 255, 0.5);
+   --nav-link-light-txt-color: rgba(255, 255, 255, 1);
+   --nav-link-light-hover-txt-color: rgba(255, 255, 255, 0.7);
 
    /* TEXT */
    --primary-font-family: "Open Sans", Arial, sans-serif;
