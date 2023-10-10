@@ -3,6 +3,142 @@
    padding: var(--spacing-xl) 0;
 }
 
+.software-services h1 {
+   margin-bottom: var(--spacing-md);
+}
+
+.software-services .section-container > .subtitle {
+   margin: 0 0 var(--spacing-xl) 0;
+   font-size: var(--font-size--lg);
+   display: block;
+}
+
+/* SOFTWARE SERVICES - DEVELOPMENT STEPS */
+.development-steps > li {
+   padding: var(--spacing-md) 0;
+}
+
+.development-steps > li:nth-child(1) {
+   padding-top: 0;
+}
+
+.development-steps > li:hover .details {
+   background-size: 1px 0, 5px 100%;
+}
+
+.development-steps .details {
+   list-style: square;
+   margin-top: var(--spacing-sm);
+
+   background: linear-gradient(
+         to top,
+         var(--yellow-color-rgba),
+         var(--yellow-color-rgba)
+      ),
+      linear-gradient(
+         to bottom,
+         var(--yellow-color-rgba),
+         var(--yellow-color-rgba)
+      );
+   background-size: 1px 100%, 5px 0;
+   background-position: 2px 0, 0 100%;
+   background-repeat: no-repeat;
+   transition: background-size 400ms ease-out;
+}
+
+.development-steps .details > li {
+   margin: var(--spacing-sm) 0;
+}
+
+/* SOFTWARE SERVICES - DEVELOPMENT STEPS - IMAGES */
+.pos-rel {
+   position: relative;
+}
+
+.development-steps-default-image {
+   height: 100%;
+   width: 100%;
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 15%,
+         rgba(34, 34, 34, 0.95) 25%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/0-tech-600x600.jpg);
+   background-size: cover;
+}
+
+.development-steps-image-container {
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   right: -100%;
+   visibility: hidden;
+}
+
+.development-steps > li:nth-child(1):hover .development-steps-image-container {
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 15%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/1-planning-1000x1500.jpg);
+   visibility: visible;
+}
+
+.development-steps > li:nth-child(2):hover .development-steps-image-container {
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 15%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/2-architecture-1000x1500.jpg);
+   visibility: visible;
+}
+
+.development-steps > li:nth-child(3):hover .development-steps-image-container {
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 15%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/3-mvp-1000x1500.jpg);
+   visibility: visible;
+}
+
+.development-steps > li:nth-child(4):hover .development-steps-image-container {
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 10%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/4-coding-1000x1500.jpg);
+   visibility: visible;
+}
+
+.development-steps > li:nth-child(5):hover .development-steps-image-container {
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 15%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/5-maintenance-1250x1250.jpg);
+   visibility: visible;
+}
+
+.development-steps > li:nth-child(6):hover .development-steps-image-container {
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 15%,
+         rgba(34, 34, 34, 0)
+      ),
+      url(/Images/6-release-1000x1500.jpg);
+   visibility: visible;
+}
+
+/* SOFTWARE SERVICES - TECHNOLOGIES */
 .technologies .title {
    display: block;
    margin: var(--spacing-lg) 0;
@@ -12,7 +148,8 @@
 
 .technologies .subtitle {
    display: block;
-   margin: var(--spacing-lg) var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
+   margin: var(--spacing-lg) var(--spacing-sm) var(--spacing-sm)
+      var(--spacing-sm);
    font-size: var(--font-size--md);
 }
 
