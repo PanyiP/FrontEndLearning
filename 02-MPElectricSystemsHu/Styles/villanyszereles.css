@@ -29,15 +29,6 @@
    align-items: flex-start;
 }
 
-.electrician-services .card .subtitle {
-   color: var(--yellow-color);
-   border-bottom: 1px solid var(--yellow-color);
-}
-
-.electrician-services .card .subtitle::before {
-   border-color: var(--yellow-color) transparent transparent transparent;
-}
-
 .electrician-services .card ul {
    list-style: url("/Images/Icons/Lightning.svg");
 }

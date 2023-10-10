@@ -39,15 +39,6 @@
    padding: var(--spacing-xl) 0;
 }
 
-.services .card .subtitle {
-   color: var(--yellow-color);
-   border-bottom: 1px solid var(--yellow-color);
-}
-
-.card .subtitle::before {
-   border-color: var(--yellow-color) transparent transparent transparent;
-}
-
 .services .card li {
    font-size: var(--font-size--xl);
 }
