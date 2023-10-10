@@ -1,585 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-      <script
-         type="text/javascript"
-         src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
-         charset="UTF-8"
-      ></script>
-      <script type="text/javascript" charset="UTF-8">
-         document.addEventListener("DOMContentLoaded", function () {
-            cookieconsent.run({
-               notice_banner_type: "simple",
-               consent_type: "express",
-               palette: "dark",
-               language: "hu",
-               page_load_consent_levels: ["strictly-necessary"],
-               notice_banner_reject_button_hide: false,
-               preferences_center_close_button_hide: false,
-               page_refresh_confirmation_buttons: false,
-               website_name: "MP Electric Systems Kft.",
-               website_privacy_policy_url:
-                  "https://mpelectricsystems.hu/Pages/adatkezeles.html",
-            });
-         });
-      </script>
 
-      <!-- Google Analytics -->
-      <script
-         type="text/plain"
-         data-cookie-consent="tracking"
-         async
-         src="https://www.googletagmanager.com/gtag/js?id=UA-188301710-1"
-      ></script>
-      <script type="text/plain" data-cookie-consent="tracking">
+<head>
+   <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+   <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
+      charset="UTF-8"></script>
+   <script type="text/javascript" charset="UTF-8">
+      document.addEventListener("DOMContentLoaded", function () {
+         cookieconsent.run({
+            notice_banner_type: "simple",
+            consent_type: "express",
+            palette: "dark",
+            language: "hu",
+            page_load_consent_levels: ["strictly-necessary"],
+            notice_banner_reject_button_hide: false,
+            preferences_center_close_button_hide: false,
+            page_refresh_confirmation_buttons: false,
+            website_name: "MP Electric Systems Kft.",
+            website_privacy_policy_url:
+               "https://mpelectricsystems.hu/Pages/adatkezeles.html",
+         });
+      });
+   </script>
+
+   <!-- Google Analytics -->
+   <script type="text/plain" data-cookie-consent="tracking" async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-188301710-1"></script>
+   <script type="text/plain" data-cookie-consent="tracking">
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
          gtag('config', 'UA-188301710-1');
       </script>
-      <!-- end of Google Analytics-->
+   <!-- end of Google Analytics-->
 
-      <noscript
-         >Cookie Consent by
-         <a href="https://www.freeprivacypolicy.com/"
-            >Free Privacy Policy Generator</a
-         ></noscript
-      >
-      <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-         name="description"
-         content="Villanyszerelési és Szoftverfejlesztési munkák végzése országosan."
-      />
-      <link rel="icon" href="/Images/Logos/cropped-Logo_300x300-32x32.png" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="/Styles/app.css" />
-      <link rel="stylesheet" href="/Styles/villanyszereles.css" />
-      <!-- Lightbox -->
-      <link rel="stylesheet" href="/Styles/lightbox.min.css" />
-      <script src="/Scripts/lightbox-plus-jquery.min.js"></script>
-      <!-- End Lightbox -->
-      <link rel="stylesheet" href="/Styles/responsive.css" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <title>Villanyszerelés - MP Electric Systems Kft.</title>
-   </head>
-   <body>
-      <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
-      <a href="#" class="gdpr-cookie-settings" id="open_preferences_center">
-         <img
-            src="/Images/Icons/settings-gear-white.svg"
-            alt="Süti beállítások"
-         />
-      </a>
+   <noscript>Cookie Consent by
+      <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
+   <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Villanyszerelési és Szoftverfejlesztési munkák végzése országosan." />
+   <link rel="icon" href="/Images/Logos/cropped-Logo_300x300-32x32.png" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="/Styles/app.css" />
+   <link rel="stylesheet" href="/Styles/villanyszereles.css" />
+   <!-- Lightbox -->
+   <link rel="stylesheet" href="/Styles/lightbox.min.css" />
+   <script src="/Scripts/lightbox-plus-jquery.min.js"></script>
+   <!-- End Lightbox -->
+   <link rel="stylesheet" href="/Styles/responsive.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <title>Villanyszerelés - MP Electric Systems Kft.</title>
+</head>
 
-      <header>
-         <div class="background-dark">
-            <div class="section-container">
-               <div class="row">
-                  <address>
-                     <div class="phone">
-                        <iconify-icon icon="oi:phone"></iconify-icon>
-                        <span>+36 20 229 5288</span>
-                     </div>
-                     <div class="email">
-                        <iconify-icon icon="oi:envelope-closed"></iconify-icon>
-                        <span
-                           ><a
-                              class="nav-link-light"
-                              href="mailto:mpelectricsystems@gmail.com"
-                              >mpelectricsystems@gmail.com</a
-                           ></span
-                        >
-                     </div>
-                  </address>
-               </div>
+<body>
+   <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+   <a href="#" class="gdpr-cookie-settings" id="open_preferences_center">
+      <img src="/Images/Icons/settings-gear-white.svg" alt="Süti beállítások" />
+   </a>
+
+   <header>
+      <div class="background-dark">
+         <div class="section-container">
+            <div class="row">
+               <address>
+                  <div class="phone">
+                     <iconify-icon icon="oi:phone"></iconify-icon>
+                     <span>+36 20 229 5288</span>
+                  </div>
+                  <div class="email">
+                     <iconify-icon icon="oi:envelope-closed"></iconify-icon>
+                     <span><a class="nav-link-light"
+                           href="mailto:mpelectricsystems@gmail.com">mpelectricsystems@gmail.com</a></span>
+                  </div>
+               </address>
             </div>
          </div>
-         <div class="background-light">
-            <div class="section-container">
-               <div class="row">
-                  <nav>
-                     <button onclick="window.location.href='../index.html';">
-                        <img
-                           src="/Images/Logos/Logo_390x150_black.png"
-                           alt="MP Electric Systems Kft."
-                        />
-                     </button>
-                     <ul>
-                        <li>
-                           <a class="nav-link-dark" href="../index.html"
-                              >Kezdőlap</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="nav-link-dark nav-link-active"
-                              href="/Pages/villanyszereles.html"
-                              >Villanyszerelés</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="nav-link-dark"
-                              href="/Pages/szoftverfejlesztes.html"
-                              >Szoftverfejlesztés</a
-                           >
-                        </li>
-                     </ul>
-                     <div class="hamburger">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                     </div>
-                  </nav>
-               </div>
-            </div>
-         </div>
-      </header>
-
-      <nav class="mobile-nav">
-         <a class="nav-link-dark" href="../index.html">Kezdőlap</a>
-         <a
-            class="nav-link-dark nav-link-active"
-            href="/Pages/villanyszereles.html"
-            >Villanyszerelés</a
-         >
-         <a class="nav-link-dark" href="/Pages/szoftverfejlesztes.html"
-            >Szoftverfejlesztés</a
-         >
-      </nav>
-
-      <main>
-         <div class="electrician-services background-light">
-            <div class="section-container">
-               <h1>Villanyszerelés</h1>
-               <div class="electrician-services-grid">
+      </div>
+      <div class="background-light">
+         <div class="section-container">
+            <div class="row">
+               <nav>
+                  <button onclick="window.location.href='../index.html';">
+                     <img src="/Images/Logos/Logo_390x150_black.png" alt="MP Electric Systems Kft." />
+                  </button>
                   <ul>
-                     <li>Ingyenes helyszíni felmérés Fejér megyében</li>
-                     <li>Villamos hálózati javítások</li>
-                     <li>Szerelvények cseréje</li>
-                     <li>Biztosítótáblák, lakáselosztók cseréje</li>
+                     <li>
+                        <a class="nav-link-dark" href="../index.html">Kezdőlap</a>
+                     </li>
+                     <li>
+                        <a class="nav-link-dark nav-link-active" href="/Pages/villanyszereles.html">Villanyszerelés</a>
+                     </li>
+                     <li>
+                        <a class="nav-link-dark" href="/Pages/szoftverfejlesztes.html">Szoftverfejlesztés</a>
+                     </li>
                   </ul>
-                  <ul>
-                     <li>Elektromos hálózat felújítása</li>
-                     <li>Háztartási gépek bekötése</li>
-                     <li>Rövid határidővel végzett hibajavítás</li>
-                     <li>Konnektorok és kapcsolók szerelése</li>
-                     <li>Hajók elektromos hálózatának felújítása</li>
-                  </ul>
-                  <ul>
-                     <li>Új házak villanyszerelése</li>
-                     <li>Villamos tervek készítése</li>
-                     <li>Erős és gyenge áramú hálózatok kiépítése, javítása</li>
-                     <li>LED világítás szerelése</li>
-                  </ul>
-               </div>
-               <div class="card-container">
-                  <div class="card">
-                     <span class="subtitle">Lakossági</span>
-                     <h2>Lakossági Szolgáltatások</h2>
-                     <ul>
-                        <li>
-                           <h3>Épületvillamossági kivitelezés</h3>
-                           <p>
-                              Lakások, családi házak, passzív házak, társasházak
-                              villanyszerelése nagy tapasztalattal és modern
-                              technológiával. Akár a legkisebb átalakításról,
-                              egyetlen kapcsoló áthelyezéséről van szó, akár az
-                              egész lakás elektromos hálózatát szeretné
-                              felújítani, keressen minket bizalommal, szívesen
-                              megvalósítjuk elképzeléseit, javaslatokat teszünk,
-                              megoldjuk felmerülő problémáit villanyszerelési
-                              témákban.
-                           </p>
-                        </li>
-                        <li>
-                           <h3>Villanyszerelés</h3>
-                           <p>
-                              Rövid határidős hibaelhárítás! Kapcsolók,
-                              konnektorok, lámpák szerelése / cseréje. Csillárok
-                              felszerelése, konyhai és egyéb háztartási gépek
-                              bekötése. Régi elektromos vezetékek cseréje. Ha az
-                              Ön otthonában bármiféle villanyszerelési probléma
-                              adódik mi azt orvosoljuk.
-                           </p>
-                        </li>
-                     </ul>
+                  <div class="hamburger">
+                     <div class="bar1"></div>
+                     <div class="bar2"></div>
+                     <div class="bar3"></div>
                   </div>
-
-                  <div class="card">
-                     <span class="subtitle">Üzleti</span>
-                     <h2>Üzleti Szolgáltatások</h2>
-                     <ul>
-                        <li>
-                           <h3>Ipari villanyszerelés</h3>
-                           <p>
-                              Erősáramú és gyengeáramú hálózatok kiépítése,
-                              bővítése, felújítása. Tálcázás, kábelhúzás,
-                              vezérlő szekrények kötése. Ipari épületek teljes
-                              körű villanyszerelése és elektromos hálózat
-                              karbantartása.
-                           </p>
-                        </li>
-                        <li>
-                           <h3>Irodai munkák</h3>
-                           <p>
-                              Vállaljuk irodák / irodaházak teljes körű erős és
-                              gyenge áramú épületvillamossági kivitelezését
-                              illetve karbantartását / szerelését.
-                           </p>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div class="card">
-                     <span class="subtitle">Mottó</span>
-                     <h2>Minőség</h2>
-                     <p>
-                        Csak és kizárólag számlára dolgozunk és munkáinkra 1 év
-                        garanciát vállalunk. Szerződésben rögzített árakkal és
-                        határidőkkel dolgozunk. Pontos és precíz munkavégzés a
-                        megrendelő érdekeit szem előtt tartva.
-                     </p>
-                  </div>
-               </div>
+               </nav>
             </div>
          </div>
+      </div>
+   </header>
 
-         <div class="references background-gray">
-            <div class="section-container">
-               <h2>Referenciák</h2>
-               <div class="gallery-grid">
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_01-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                           <img
-                              src="/Images/References/Electrician/nagyvenyim_haz_nr1_thumb-300x225.jpg"
-                              alt="Nagyvenyim ház villanyszerelés"
-                           />
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_02-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-alt="Nagyvenyim ház villanyszerelés"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_03-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-alt="Nagyvenyim ház villanyszerelés"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_04-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-alt="Nagyvenyim ház villanyszerelés"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_05-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-alt="Nagyvenyim ház villanyszerelés"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_06-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-alt="Nagyvenyim ház villanyszerelés"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/nagyvenyim_haz_nr1_07-1024x768.jpg"
-                           data-lightbox="nagyvenyim_haz_nr1"
-                           data-alt="Nagyvenyim ház villanyszerelés"
-                           data-title="Nagyvenyim ház villanyszerelés"
-                        >
-                        </a>
-                     </div>
-                     <h3>Nagyvenyim - Ház kivitelezése</h3>
-                     <p>
-                        Új építésű ház villanyszerelési munkálatainak teljes
-                        szintű kivitelezése.
-                     </p>
-                  </div>
+   <nav class="mobile-nav">
+      <a class="nav-link-dark" href="../index.html">Kezdőlap</a>
+      <a class="nav-link-dark nav-link-active" href="/Pages/villanyszereles.html">Villanyszerelés</a>
+      <a class="nav-link-dark" href="/Pages/szoftverfejlesztes.html">Szoftverfejlesztés</a>
+   </nav>
 
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_01-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                           <img
-                              src="/Images/References/Electrician/dunaujvaros_lakas_nr1_thumb-224x300.jpg"
-                              alt="Dunaújváros lakás felújítás #1"
-                           />
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_02-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_03-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_04-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_05-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_06-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_07-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr1_08-768x1027.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr1"
-                           data-alt="Dunaújváros lakás felújítás #1"
-                           data-title="Dunaújváros lakás felújítás #1"
-                        >
-                        </a>
-                     </div>
-                     <h3>Dunaújváros lakás felújítás #1</h3>
-                     <p>Elektromos hálózat újra kábelezése</p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/kapcs_therm_01-1024x766.jpg"
-                           data-lightbox="kapcs_therm"
-                           data-title="Kapcsoló és termosztát"
-                        >
-                           <img
-                              src="/Images/References/Electrician/kapcs_therm_thumb-300x224.jpg"
-                              alt="Kapcsoló és termosztát"
-                           />
-                        </a>
-                     </div>
-                     <h3>Kapcsoló és termosztát</h3>
-                     <p>
-                        Sorolt kapcsoló és csillár kapcsoló, termosztát
-                        felszerelése és bekötése
-                     </p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/medence_vezerles_01-1024x766.jpg"
-                           data-lightbox="medence_vezerles"
-                           data-title="Medence vezérlés"
-                        >
-                           <img
-                              src="/Images/References/Electrician/medence_vezerles_thumb-300x224.jpg"
-                              alt="Medence vezérlés"
-                           />
-                        </a>
-                     </div>
-                     <h3>Medence vezérlés</h3>
-                     <p>Régi rendszerű medence vezérlés javítás</p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr2_01-1024x768.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr2"
-                           data-title="Dunaújváros lakás felújítás #2"
-                        >
-                           <img
-                              src="/Images/References/Electrician/dunaujvaros_lakas_nr2_thumb-300x225.jpg"
-                              alt="Dunaújváros lakás felújítás #2"
-                           />
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr2_02-1080x1440.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr2"
-                           data-alt="Dunaújváros lakás felújítás #2"
-                           data-title="Dunaújváros lakás felújítás #2"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr2_03-1080x1444.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr2"
-                           data-alt="Dunaújváros lakás felújítás #2"
-                           data-title="Dunaújváros lakás felújítás #2"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/dunaujvaros_lakas_nr2_04-1080x1444.jpg"
-                           data-lightbox="dunaujvaros_lakas_nr2"
-                           data-alt="Dunaújváros lakás felújítás #2"
-                           data-title="Dunaújváros lakás felújítás #2"
-                        >
-                        </a>
-                     </div>
-                     <h3>Dunaújváros lakás felújítás #2</h3>
-                     <p>Teljes fürdőszobai elektromos felújítás</p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/uj_eloszto_01-1080x1444.jpg"
-                           data-lightbox="uj_eloszto"
-                           data-title="Új elosztó kialakítása"
-                        >
-                           <img
-                              src="/Images/References/Electrician/uj_eloszto_thumb-224x300.jpg"
-                              alt="Új elosztó kialakítása"
-                           />
-                        </a>
-                     </div>
-                     <h3>Új elosztó kialakítása</h3>
-                     <p>
-                        Három fázis elosztása belső áramkörökre, külön áramkörök
-                        létrehozása szobánként, nagy fogyasztóknak,
-                        világításnak, stb…
-                     </p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/erzsebet_tabor_01-1024x766.jpg"
-                           data-lightbox="erzsebet_tabor"
-                           data-title="Erzsébet tábor"
-                        >
-                           <img
-                              src="/Images/References/Electrician/erzsebet_tabor_thumb-300x224.jpg"
-                              alt="Erzsébet tábor"
-                           />
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/erzsebet_tabor_02-1024x766.jpg"
-                           data-lightbox="erzsebet_tabor"
-                           data-alt="Erzsébet tábor"
-                           data-title="Erzsébet tábor"
-                        >
-                        </a>
-                        <a
-                           href="/Images/References/Electrician/erzsebet_tabor_03-1080x1444.jpg"
-                           data-lightbox="erzsebet_tabor"
-                           data-alt="Erzsébet tábor"
-                           data-title="Erzsébet tábor"
-                        >
-                        </a>
-                     </div>
-                     <h3>Erzsébet tábor</h3>
-                     <p>
-                        Villanyszerelési munkák fonyódligeti Erzsébet táborban.
-                     </p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/galetti_fancoil_01-1080x1444.jpg"
-                           data-lightbox="galetti_fancoil"
-                           data-title="Galletti folyadékhűtő és fan coil"
-                        >
-                           <img
-                              src="/Images/References/Electrician/galetti_fancoil_thumb-225x300.jpg"
-                              alt="Galletti folyadékhűtő és fan coil"
-                           />
-                        </a>
-                     </div>
-                     <h3>Galletti folyadékhűtő és fan coil</h3>
-                     <p>
-                        Galletti folyadékhűtő és fan coil rendszerek telepítése és karbantartása.
-                        Ritál szekrényklima telepítése és karbantartása/javítása.
-                        Ipari klímák telepítése és kabantartása.
-                     </p>
-                  </div>
-
-                  <div class="gallery-container">
-                     <div class="gallery">
-                        <a
-                           href="/Images/References/Electrician/gautschi-400x300.jpg"
-                           data-lightbox="gautschi"
-                           data-title="Gautschi kemence felújítás"
-                        >
-                           <img
-                              src="/Images/References/Electrician/gautschi-400x300.jpg"
-                              alt="Gautschi kemence felújítás"
-                           />
-                        </a>
-                     </div>
-                     <h3>Gautschi kemence felújítás</h3>
-                  </div>
-               </div>
+   <main>
+      <div class="electrician-services background-light">
+         <div class="section-container">
+            <h1>Villanyszerelés</h1>
+            <div class="electrician-services-grid">
+               <ul>
+                  <li>Ingyenes helyszíni felmérés Fejér megyében</li>
+                  <li>Villamos hálózati javítások</li>
+                  <li>Szerelvények cseréje</li>
+                  <li>Biztosítótáblák, lakáselosztók cseréje</li>
+               </ul>
+               <ul>
+                  <li>Elektromos hálózat felújítása</li>
+                  <li>Háztartási gépek bekötése</li>
+                  <li>Rövid határidővel végzett hibajavítás</li>
+                  <li>Konnektorok és kapcsolók szerelése</li>
+                  <li>Hajók elektromos hálózatának felújítása</li>
+               </ul>
+               <ul>
+                  <li>Új házak villanyszerelése</li>
+                  <li>Villamos tervek készítése</li>
+                  <li>Erős és gyenge áramú hálózatok kiépítése, javítása</li>
+                  <li>LED világítás szerelése</li>
+               </ul>
             </div>
-         </div>
-
-         <div class="testimonials background-dark">
-            <div class="section-container">
-               <h2>Vélemények</h2>
-               <div class="review-row">
-                  <a href="https://g.co/kgs/odHVr5" target="_blank">
-                     <div class="review-card">
-                        <span>Márti Pallag</span>
-                        <div class="rating">
-                           <span class="fa fa-star checked"></span>
-                           <span class="fa fa-star checked"></span>
-                           <span class="fa fa-star checked"></span>
-                           <span class="fa fa-star checked"></span>
-                           <span class="fa fa-star checked"></span>
-                        </div>
+            <div class="card-container">
+               <div class="card">
+                  <span class="subtitle">Lakossági</span>
+                  <h2>Lakossági Szolgáltatások</h2>
+                  <ul>
+                     <li>
+                        <h3>Épületvillamossági kivitelezés</h3>
                         <p>
-                           Nagyon udvarias volt a szerelő. A hibabbejelntés
-                           napján kijött, gyorsan kijavította a hibákat.
-                           Áraikban korrektek. Mindenkinek csak ajánlani tudom
-                           ezt a céget.
+                           Lakások, családi házak, passzív házak, társasházak
+                           villanyszerelése nagy tapasztalattal és modern
+                           technológiával. Akár a legkisebb átalakításról,
+                           egyetlen kapcsoló áthelyezéséről van szó, akár az
+                           egész lakás elektromos hálózatát szeretné
+                           felújítani, keressen minket bizalommal, szívesen
+                           megvalósítjuk elképzeléseit, javaslatokat teszünk,
+                           megoldjuk felmerülő problémáit villanyszerelési
+                           témákban.
                         </p>
+                     </li>
+                     <li>
+                        <h3>Villanyszerelés</h3>
+                        <p>
+                           Rövid határidős hibaelhárítás! Kapcsolók,
+                           konnektorok, lámpák szerelése / cseréje. Csillárok
+                           felszerelése, konyhai és egyéb háztartási gépek
+                           bekötése. Régi elektromos vezetékek cseréje. Ha az
+                           Ön otthonában bármiféle villanyszerelési probléma
+                           adódik mi azt orvosoljuk.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="card">
+                  <span class="subtitle">Üzleti</span>
+                  <h2>Üzleti Szolgáltatások</h2>
+                  <ul>
+                     <li>
+                        <h3>Ipari villanyszerelés</h3>
+                        <p>
+                           Erősáramú és gyengeáramú hálózatok kiépítése,
+                           bővítése, felújítása. Tálcázás, kábelhúzás,
+                           vezérlő szekrények kötése. Ipari épületek teljes
+                           körű villanyszerelése és elektromos hálózat
+                           karbantartása.
+                        </p>
+                     </li>
+                     <li>
+                        <h3>Irodai munkák</h3>
+                        <p>
+                           Vállaljuk irodák / irodaházak teljes körű erős és
+                           gyenge áramú épületvillamossági kivitelezését
+                           illetve karbantartását / szerelését.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="card">
+                  <span class="subtitle">Mottó</span>
+                  <h2>Minőség</h2>
+                  <p>
+                     Csak és kizárólag számlára dolgozunk és munkáinkra 1 év
+                     garanciát vállalunk. Szerződésben rögzített árakkal és
+                     határidőkkel dolgozunk. Pontos és precíz munkavégzés a
+                     megrendelő érdekeit szem előtt tartva.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="references background-gray">
+         <div class="section-container">
+            <h2>Referenciák</h2>
+            <div class="gallery-grid">
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_01-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-title="Nagyvenyim ház villanyszerelés">
+                        <img src="/Images/References/Electrician/nagyvenyim_haz_nr1_thumb-300x225.jpg"
+                           alt="Nagyvenyim ház villanyszerelés" />
+                     </a>
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_02-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-alt="Nagyvenyim ház villanyszerelés"
+                        data-title="Nagyvenyim ház villanyszerelés">
+                     </a>
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_03-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-alt="Nagyvenyim ház villanyszerelés"
+                        data-title="Nagyvenyim ház villanyszerelés">
+                     </a>
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_04-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-alt="Nagyvenyim ház villanyszerelés"
+                        data-title="Nagyvenyim ház villanyszerelés">
+                     </a>
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_05-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-alt="Nagyvenyim ház villanyszerelés"
+                        data-title="Nagyvenyim ház villanyszerelés">
+                     </a>
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_06-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-alt="Nagyvenyim ház villanyszerelés"
+                        data-title="Nagyvenyim ház villanyszerelés">
+                     </a>
+                     <a href="/Images/References/Electrician/nagyvenyim_haz_nr1_07-1024x768.jpg"
+                        data-lightbox="nagyvenyim_haz_nr1" data-alt="Nagyvenyim ház villanyszerelés"
+                        data-title="Nagyvenyim ház villanyszerelés">
+                     </a>
+                  </div>
+                  <h3>Nagyvenyim - Ház kivitelezése</h3>
+                  <p>
+                     Új építésű ház villanyszerelési munkálatainak teljes
+                     szintű kivitelezése.
+                  </p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_01-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-title="Dunaújváros lakás felújítás #1">
+                        <img src="/Images/References/Electrician/dunaujvaros_lakas_nr1_thumb-224x300.jpg"
+                           alt="Dunaújváros lakás felújítás #1" />
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_02-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_03-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_04-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_05-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_06-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_07-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr1_08-768x1027.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr1" data-alt="Dunaújváros lakás felújítás #1"
+                        data-title="Dunaújváros lakás felújítás #1">
+                     </a>
+                  </div>
+                  <h3>Dunaújváros lakás felújítás #1</h3>
+                  <p>Elektromos hálózat újra kábelezése</p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/kapcs_therm_01-1024x766.jpg" data-lightbox="kapcs_therm"
+                        data-title="Kapcsoló és termosztát">
+                        <img src="/Images/References/Electrician/kapcs_therm_thumb-300x224.jpg"
+                           alt="Kapcsoló és termosztát" />
+                     </a>
+                  </div>
+                  <h3>Kapcsoló és termosztát</h3>
+                  <p>
+                     Sorolt kapcsoló és csillár kapcsoló, termosztát
+                     felszerelése és bekötése
+                  </p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/medence_vezerles_01-1024x766.jpg"
+                        data-lightbox="medence_vezerles" data-title="Medence vezérlés">
+                        <img src="/Images/References/Electrician/medence_vezerles_thumb-300x224.jpg"
+                           alt="Medence vezérlés" />
+                     </a>
+                  </div>
+                  <h3>Medence vezérlés</h3>
+                  <p>Régi rendszerű medence vezérlés javítás</p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr2_01-1024x768.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr2" data-title="Dunaújváros lakás felújítás #2">
+                        <img src="/Images/References/Electrician/dunaujvaros_lakas_nr2_thumb-300x225.jpg"
+                           alt="Dunaújváros lakás felújítás #2" />
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr2_02-1080x1440.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr2" data-alt="Dunaújváros lakás felújítás #2"
+                        data-title="Dunaújváros lakás felújítás #2">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr2_03-1080x1444.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr2" data-alt="Dunaújváros lakás felújítás #2"
+                        data-title="Dunaújváros lakás felújítás #2">
+                     </a>
+                     <a href="/Images/References/Electrician/dunaujvaros_lakas_nr2_04-1080x1444.jpg"
+                        data-lightbox="dunaujvaros_lakas_nr2" data-alt="Dunaújváros lakás felújítás #2"
+                        data-title="Dunaújváros lakás felújítás #2">
+                     </a>
+                  </div>
+                  <h3>Dunaújváros lakás felújítás #2</h3>
+                  <p>Teljes fürdőszobai elektromos felújítás</p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/uj_eloszto_01-1080x1444.jpg" data-lightbox="uj_eloszto"
+                        data-title="Új elosztó kialakítása">
+                        <img src="/Images/References/Electrician/uj_eloszto_thumb-224x300.jpg"
+                           alt="Új elosztó kialakítása" />
+                     </a>
+                  </div>
+                  <h3>Új elosztó kialakítása</h3>
+                  <p>
+                     Három fázis elosztása belső áramkörökre, külön áramkörök
+                     létrehozása szobánként, nagy fogyasztóknak,
+                     világításnak, stb…
+                  </p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/erzsebet_tabor_01-1024x766.jpg"
+                        data-lightbox="erzsebet_tabor" data-title="Erzsébet tábor">
+                        <img src="/Images/References/Electrician/erzsebet_tabor_thumb-300x224.jpg"
+                           alt="Erzsébet tábor" />
+                     </a>
+                     <a href="/Images/References/Electrician/erzsebet_tabor_02-1024x766.jpg"
+                        data-lightbox="erzsebet_tabor" data-alt="Erzsébet tábor" data-title="Erzsébet tábor">
+                     </a>
+                     <a href="/Images/References/Electrician/erzsebet_tabor_03-1080x1444.jpg"
+                        data-lightbox="erzsebet_tabor" data-alt="Erzsébet tábor" data-title="Erzsébet tábor">
+                     </a>
+                  </div>
+                  <h3>Erzsébet tábor</h3>
+                  <p>
+                     Villanyszerelési munkák fonyódligeti Erzsébet táborban.
+                  </p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/galetti_fancoil_01-1080x1444.jpg"
+                        data-lightbox="galetti_fancoil" data-title="Galletti folyadékhűtő és fan coil">
+                        <img src="/Images/References/Electrician/galetti_fancoil_thumb-225x300.jpg"
+                           alt="Galletti folyadékhűtő és fan coil" />
+                     </a>
+                  </div>
+                  <h3>Galletti folyadékhűtő és fan coil</h3>
+                  <p>
+                     Galletti folyadékhűtő és fan coil rendszerek telepítése és karbantartása.
+                     Ritál szekrényklima telepítése és karbantartása/javítása.
+                     Ipari klímák telepítése és kabantartása.
+                  </p>
+               </div>
+
+               <div class="gallery-container">
+                  <div class="gallery">
+                     <a href="/Images/References/Electrician/gautschi-400x300.jpg" data-lightbox="gautschi"
+                        data-title="Gautschi kemence felújítás">
+                        <img src="/Images/References/Electrician/gautschi-400x300.jpg"
+                           alt="Gautschi kemence felújítás" />
+                     </a>
+                  </div>
+                  <h3>Gautschi kemence felújítás</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="testimonials background-dark">
+         <div class="section-container">
+            <h2>Vélemények</h2>
+            <div class="review-row">
+               <a href="https://g.co/kgs/odHVr5" target="_blank">
+                  <div class="review-card">
+                     <span>Márti Pallag</span>
+                     <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
                      </div>
-                  </a>
-                  <a href="https://g.co/kgs/7n31Az" target="_blank">
+                     <p>
+                        Nagyon udvarias volt a szerelő. A hibabbejelntés
+                        napján kijött, gyorsan kijavította a hibákat.
+                        Áraikban korrektek. Mindenkinek csak ajánlani tudom
+                        ezt a céget.
+                     </p>
+                  </div>
+               </a>
+               <a href="https://g.co/kgs/7n31Az" target="_blank">
                   <div class="review-card">
                      <span>Ödönné Namesnyik</span>
                      <div class="rating">
@@ -621,132 +475,112 @@
                      </div>
                      <p></p>
                   </div>
-               </div>
+            </div>
             </a>
-               <a
-                  class="link link-primary link-with-icon"
-                  href="https://g.page/r/Cew_5dZnLAaeEB0/review"
-                  target="_blank"
-               >
-                  Vélemény írása
-                  <iconify-icon icon="oi:arrow-right"></iconify-icon>
-               </a>
-            </div>
+            <a class="link link-primary link-with-icon" href="https://g.page/r/Cew_5dZnLAaeEB0/review" target="_blank">
+               Vélemény írása
+               <iconify-icon icon="oi:arrow-right"></iconify-icon>
+            </a>
          </div>
+      </div>
 
-         <div class="electrician-partners background-gray">
-            <div class="section-container">
-               <h2>Partnerek</h2>
-               <div class="ep-grid">
-                  <img src="/Images/Logos/Partners/logo-alcoa.webp" alt="Alcoa" />
-                  <img src="/Images/Logos/Partners/logo-hankook.png" alt="Hankook" />
-               </div>
+      <div class="electrician-partners background-gray">
+         <div class="section-container">
+            <h2>Partnerek</h2>
+            <div class="ep-grid">
+               <img src="/Images/Logos/Partners/logo-alcoa.webp" alt="Alcoa" />
+               <img src="/Images/Logos/Partners/logo-hankook.png" alt="Hankook" />
             </div>
          </div>
+      </div>
 
-         <div class="faq background-dark">
-            <div class="section-container">
-               <h2>Gyakori Kérdések</h2>
-               <div class="faq-grid">
-                  <div class="question">
-                     <h4>Számla nélkül mennyi?</h4>
-                     <p>
-                        Csak és kizárólag számlára dolgozunk és munkáinkra 1 év
-                        garanciát vállalunk. Szerződésben rögzített árakkal és
-                        határidőkkel dolgozunk.
-                     </p>
-                  </div>
-                  <div class="question">
-                     <h4>Lakásfelújítási programban részt vesztek?</h4>
-                     <p>
-                        Cégünk a lakásfelújítási program követeléseinek
-                        megfelel, így számláink felhasználhatóak a munka és
-                        anyag költség elszámolására is.
-                     </p>
-                  </div>
-                  <div class="question">
-                     <h4>Mikor kell fizetnem?</h4>
-                     <p>
-                        Elkészült munkafázisonként, teljesítés igazolás
-                        aláírását követően, számla ellenében a fizetési határidő
-                        8 nap. Számláinkat elektronikusan küldjük, amit
-                        készpénzzel vagy átutalással lehet kiegyenlíteni.
-                     </p>
-                  </div>
-                  <div class="question">
-                     <h4>E.ON regisztrált villanyszerelők vagytok?</h4>
-                     <p>
-                        Nem, egyelőre nem rendelkezünk E.ON minősítéssel, így
-                        csak a villanyóra után tudunk villanyszerelést vállalni.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </main>
-
-      <footer>
-         <div class="footer background-gray">
-            <div class="section-container">
-               <div class="grid">
-                  <div class="location">
-                     <b>Székhely:</b> 8200 Veszprém,<br />
-                     Pöltenberg Ernő utca 2. 3/7.<br /><br />
-                     <b>Telephely:</b> 2421 Nagyvenyim,<br />
-                     Deák Ferenc Utca 32/1.
-                  </div>
-                  <div class="contact">
-                     <b>Telefon</b><br />
-                     Villanyszerelés: +36 20 229 5288<br />
-                     Szoftverfejlesztés: +36 20 545 2496<br /><br />
-                     <b>Email</b><br />
-                     <a
-                        class="nav-link-dark"
-                        href="mailto:mpelectricsystems@gmail.com"
-                        >mpelectricsystems@gmail.com</a
-                     >
-                  </div>
-                  <div class="social">
-                     <a
-                        class="facebook-link"
-                        target="_blank"
-                        href="https://www.facebook.com/MP-Electric-Systems-Kft-100994622031087"
-                     ></a>
-                     <a
-                        class="linkedin-link"
-                        target="_blank"
-                        href="https://www.linkedin.com/company/mp-electric-systems-kft"
-                     ></a>
-                     <a
-                        class="google-link"
-                        target="_blank"
-                        href="https://www.google.com/maps/place/MP+Electric+Systems+Kft./@46.9613961,18.8467205,15z/data=!4m16!1m9!3m8!1s0x47699b04cf1d5769:0x9e062c67d6e53fec!2sMP+Electric+Systems+Kft.!8m2!3d46.9604003!4d18.8521707!9m1!1b1!16s%2Fg%2F11n74f_d6q!3m5!1s0x47699b04cf1d5769:0x9e062c67d6e53fec!8m2!3d46.9604003!4d18.8521707!16s%2Fg%2F11n74f_d6q?entry=ttu"
-                     ></a>
-                  </div>
-                  <div class="privacy">
-                     <a
-                        class="nav-link-dark"
-                        target="_blank"
-                        href="/Pages/adatkezeles.html"
-                        ><b>Adatkezelési tájékoztató</b></a
-                     >
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="footnotes background-dark">
-            <div class="section-container">
-               <div class="row">
+      <div class="faq background-dark">
+         <div class="section-container">
+            <h2>Gyakori Kérdések</h2>
+            <div class="faq-grid">
+               <div class="question">
+                  <h4>Számla nélkül mennyi?</h4>
                   <p>
-                     Készítette: Panyi Péter - MP Electric Systems Kft. &copy;
-                     2023
+                     Csak és kizárólag számlára dolgozunk és munkáinkra 1 év
+                     garanciát vállalunk. Szerződésben rögzített árakkal és
+                     határidőkkel dolgozunk.
+                  </p>
+               </div>
+               <div class="question">
+                  <h4>Lakásfelújítási programban részt vesztek?</h4>
+                  <p>
+                     Cégünk a lakásfelújítási program követeléseinek
+                     megfelel, így számláink felhasználhatóak a munka és
+                     anyag költség elszámolására is.
+                  </p>
+               </div>
+               <div class="question">
+                  <h4>Mikor kell fizetnem?</h4>
+                  <p>
+                     Elkészült munkafázisonként, teljesítés igazolás
+                     aláírását követően, számla ellenében a fizetési határidő
+                     8 nap. Számláinkat elektronikusan küldjük, amit
+                     készpénzzel vagy átutalással lehet kiegyenlíteni.
+                  </p>
+               </div>
+               <div class="question">
+                  <h4>E.ON regisztrált villanyszerelők vagytok?</h4>
+                  <p>
+                     Nem, egyelőre nem rendelkezünk E.ON minősítéssel, így
+                     csak a villanyóra után tudunk villanyszerelést vállalni.
                   </p>
                </div>
             </div>
          </div>
-      </footer>
+      </div>
+   </main>
 
-      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-      <script src="/Scripts/hamburger.js"></script>
-   </body>
+   <footer>
+      <div class="footer background-gray">
+         <div class="section-container">
+            <div class="grid">
+               <div class="location">
+                  <b>Székhely:</b> 8200 Veszprém,<br />
+                  Pöltenberg Ernő utca 2. 3/7.<br /><br />
+                  <b>Telephely:</b> 2421 Nagyvenyim,<br />
+                  Deák Ferenc Utca 32/1.
+               </div>
+               <div class="contact">
+                  <b>Telefon</b><br />
+                  Villanyszerelés: +36 20 229 5288<br />
+                  Szoftverfejlesztés: +36 20 545 2496<br /><br />
+                  <b>Email</b><br />
+                  <a class="nav-link-dark" href="mailto:mpelectricsystems@gmail.com">mpelectricsystems@gmail.com</a>
+               </div>
+               <div class="social">
+                  <a class="facebook-link" target="_blank"
+                     href="https://www.facebook.com/MP-Electric-Systems-Kft-100994622031087"></a>
+                  <a class="linkedin-link" target="_blank"
+                     href="https://www.linkedin.com/company/mp-electric-systems-kft"></a>
+                  <a class="google-link" target="_blank"
+                     href="https://www.google.com/maps/place/MP+Electric+Systems+Kft./@46.9613961,18.8467205,15z/data=!4m16!1m9!3m8!1s0x47699b04cf1d5769:0x9e062c67d6e53fec!2sMP+Electric+Systems+Kft.!8m2!3d46.9604003!4d18.8521707!9m1!1b1!16s%2Fg%2F11n74f_d6q!3m5!1s0x47699b04cf1d5769:0x9e062c67d6e53fec!8m2!3d46.9604003!4d18.8521707!16s%2Fg%2F11n74f_d6q?entry=ttu"></a>
+               </div>
+               <div class="privacy">
+                  <a class="nav-link-dark" target="_blank" href="/Pages/adatkezeles.html"><b>Adatkezelési
+                        tájékoztató</b></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footnotes background-dark">
+         <div class="section-container">
+            <div class="row">
+               <p>
+                  Készítette: Panyi Péter - MP Electric Systems Kft. &copy;
+                  2023
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   <script src="/Scripts/hamburger.js"></script>
+</body>
+
 </html>
