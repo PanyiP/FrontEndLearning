@@ -86,6 +86,10 @@
    box-shadow: 0 0 10px var(--primary-txt-color);
 }
 
+.about-us .card .subtitle {
+   color: var(--secondary-txt-color);
+}
+
 .about-us .card span::before {
    border-color: var(--secondary-txt-color) transparent transparent transparent;
 }
