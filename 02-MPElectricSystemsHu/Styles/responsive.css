@@ -93,6 +93,10 @@
       font-size: var(--font-size--h2-tb);
    }
 
+   .section-container .subtitle {
+      font-size: var(--font-size--lg);
+   }
+
    /* NAV BAR */
    nav ul {
       display: none;
@@ -165,11 +169,6 @@
       left: 0px;
    }
 
-   /* ELECTRICIAN - SERVICES SECTION */
-   .electrician-services .subtitle {
-      font-size: var(--font-size--lg);
-   }
-
    /* ELECTRICIAN - TESTIMONIALS SECTION */
    .testimonials .review-row {
       left: 25px;
@@ -233,6 +232,10 @@
       font-size: var(--font-size--sm);
    }
 
+   .section-container .subtitle {
+      font-size: var(--font-size--md);
+   }
+
    /* ADDRESS BAR */
    address {
       flex-direction: column;
@@ -288,10 +291,6 @@
    }
 
    /* ELECTRICIAN - SERVICES SECTION */
-   .electrician-services .subtitle {
-      font-size: var(--font-size--md);
-   }
-
    .electrician-services-grid {
       grid-template-columns: 1fr;
    }

@@ -181,6 +181,11 @@ span {
    flex-direction: column;
 }
 
+.section-container .subtitle {
+   font-size: var(--font-size--xl);
+   padding: var(--spacing-md) 0 var(--spacing-xl) 0;
+}
+
 .row {
    width: 100%;
    display: flex;

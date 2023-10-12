@@ -7,10 +7,6 @@
    margin-bottom: var(--spacing-md);
 }
 
-.software-services .section-container > .subtitle {
-   margin: 0 0 var(--spacing-xl) 0;
-   font-size: var(--font-size--lg);
-   display: block;
 }
 
 /* SOFTWARE SERVICES - DEVELOPMENT STEPS */
