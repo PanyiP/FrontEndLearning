@@ -31,6 +31,13 @@
    }
 }
 
+@media only screen and (max-width: 1200px) {
+   /* GENERAL */
+   :root {
+      --secondary-margin: 0 5%;
+   }
+}
+
 @media only screen and (max-width: 1100px) {
    /* ELECTRICIAN & SOFTWARE - REFERENCES SECTION */
    .references .gallery-grid {
@@ -46,6 +53,15 @@
       grid-template-columns: repeat(2, 1fr);
       left: 50px;
       right: 50px;
+   }
+
+   /* SOFTWARE SERVICES */
+   .software-services .card-container {
+      flex-wrap: wrap;
+   }
+
+   .software-services .card {
+      width: 45%;
    }
 }
 
@@ -183,6 +199,24 @@
    .faq-grid {
       grid-template-columns: 1fr;
    }
+
+   /* SOFTWARE SERVICES */
+   .software-services .card-container {
+      flex-wrap: wrap;
+   }
+
+   .software-services .card {
+      width: 100%;
+   }
+
+   /* SOFTWARE DEVELOPMENT - STEPS */
+   .software-development .col-2:nth-child(1) {
+      width: 60%;
+   }
+
+   .software-development .col-2:nth-child(2) {
+      width: 40%;
+   }
 }
 
 @media only screen and (max-width: 630px) {
@@ -210,6 +244,32 @@
    .testimonials {
       padding: var(--spacing-md) 0;
       height: 750px;
+   }
+
+   /* SOFTWARE SERVICES */
+   .software-services .subtitle {
+      padding-bottom: var(--spacing-lg);
+   }
+
+   /* SOFTWARE DEVELOPMENT - STEPS */
+   .software-development .col-2:nth-child(1) {
+      width: 100%;
+   }
+
+   .software-development .col-2:nth-child(2) {
+      width: 0;
+   }
+
+   .software-development .development-steps-default-image {
+      visibility: hidden;
+   }
+
+   .software-development .development-steps .development-steps-image-container {
+      visibility: hidden;
+   }
+
+   .software-development .development-steps > li:hover .development-steps-image-container {
+      visibility: hidden;
    }
 }
 
