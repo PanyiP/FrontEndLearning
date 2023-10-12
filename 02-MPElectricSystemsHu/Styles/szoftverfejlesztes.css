@@ -64,7 +64,7 @@
          rgba(34, 34, 34, 0.95) 25%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/0-tech-600x600.jpg);
+      url("../Images/0-tech-600x600.jpg");
    background-size: cover;
 }
 
@@ -84,7 +84,7 @@
          rgba(34, 34, 34, 1) 15%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/1-planning-1000x1500.jpg);
+      url("../Images/1-planning-1000x1500.jpg");
    visibility: visible;
 }
 
@@ -94,7 +94,7 @@
          rgba(34, 34, 34, 1) 15%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/2-architecture-1000x1500.jpg);
+      url("../Images/2-architecture-1000x1500.jpg");
    visibility: visible;
 }
 
@@ -104,7 +104,7 @@
          rgba(34, 34, 34, 1) 15%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/3-mvp-1000x1500.jpg);
+      url("../Images/3-mvp-1000x1500.jpg");
    visibility: visible;
 }
 
@@ -114,7 +114,7 @@
          rgba(34, 34, 34, 1) 10%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/4-coding-1000x1500.jpg);
+      url("../Images/4-coding-1000x1500.jpg");
    visibility: visible;
 }
 
@@ -124,7 +124,7 @@
          rgba(34, 34, 34, 1) 15%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/5-maintenance-1250x1250.jpg);
+      url("../Images/5-maintenance-1250x1250.jpg");
    visibility: visible;
 }
 
@@ -134,7 +134,7 @@
          rgba(34, 34, 34, 1) 15%,
          rgba(34, 34, 34, 0)
       ),
-      url(/Images/6-release-1000x1500.jpg);
+      url("../Images/6-release-1000x1500.jpg");
    visibility: visible;
 }
 

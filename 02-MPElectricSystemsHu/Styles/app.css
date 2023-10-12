@@ -328,7 +328,7 @@ span {
    --image-size: 24px;
 
    content: "";
-   background-image: url("/Images/Icons/question-mark-64.svg");
+   background-image: url("../Images/Icons/question-mark-64.svg");
    background-size: var(--image-size);
    width: var(--image-size);
    height: var(--image-size);
@@ -577,7 +577,7 @@ nav .bar1,
    left: 0px;
    width: 30px;
    height: 30px;
-   background: url(/Images/Social/Facebook_Logo_Primary.png);
+   background: url("../Images/Social/Facebook_Logo_Primary.png");
    background-size: cover;
    transition: 0.2s ease;
 }
@@ -593,7 +593,7 @@ nav .bar1,
    left: 40px;
    width: 30px;
    height: 30px;
-   background: url(/Images/Social/LI-In-Bug.png);
+   background: url("../Images/Social/LI-In-Bug.png");
    background-size: cover;
    transition: 0.2s ease;
 }
@@ -609,7 +609,7 @@ nav .bar1,
    left: 80px;
    width: 30px;
    height: 30px;
-   background: url(/Images/Social/Google-Logo.png);
+   background: url("../Images/Social/Google-Logo.png");
    background-size: cover;
    transition: 0.2s ease;
 }

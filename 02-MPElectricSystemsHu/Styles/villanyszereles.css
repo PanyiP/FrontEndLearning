@@ -30,7 +30,7 @@
 }
 
 .electrician-services .card ul {
-   list-style: url("/Images/Icons/Lightning.svg");
+   list-style: url("../Images/Icons/Lightning.svg");
 }
 
 .electrician-services .card ul li {
