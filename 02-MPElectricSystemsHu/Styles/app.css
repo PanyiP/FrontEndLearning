@@ -253,11 +253,6 @@ span {
    justify-content: flex-end;
 }
 
-.card:hover {
-   transform: scale(1.01);
-   box-shadow: 3px 3px 10px 3px var(--secondary-txt-color);
-}
-
 .card .subtitle {
    color: var(--yellow-color);
    border-bottom: 1px solid var(--yellow-color);
