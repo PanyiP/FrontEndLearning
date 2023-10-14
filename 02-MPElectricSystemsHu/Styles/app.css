@@ -227,12 +227,11 @@ span {
 }
 
 .card {
-   width: 45%;
+   width: 48%;
    height: 100%;
    box-sizing: border-box;
    background-color: var(--primary-bg-color);
    color: var(--primary-txt-color);
-   margin: var(--spacing-md);
    border-radius: var(--border-radius);
    box-shadow: 0 0 10px var(--secondary-txt-color);
    display: flex;
