@@ -13,7 +13,8 @@
 }
 
 .software-services .card {
-   width: 33%;
+   width: 30%;
+   flex: 1 1 auto;
 }
 
 .software-services ul {

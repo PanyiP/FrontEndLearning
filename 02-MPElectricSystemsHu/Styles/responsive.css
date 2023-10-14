@@ -85,10 +85,6 @@
       min-width: 50%;
    }
 
-   .electrician-services .card-container {
-      flex-wrap: wrap;
-   }
-
    .electrician-services .card {
       width: 100%;
    }

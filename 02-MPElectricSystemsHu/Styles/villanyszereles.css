@@ -21,14 +21,6 @@
    padding: 0 var(--spacing-lg);
 }
 
-.electrician-services .card-container {
-   flex-wrap: wrap;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: flex-start;
-}
-
 .electrician-services .card ul {
    list-style: url("../Images/Icons/Lightning.svg");
 }
