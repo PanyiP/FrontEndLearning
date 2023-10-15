@@ -1,0 +1,113 @@
+/* HERO SECTION */
+.hero {
+   color: var(--primary-txt-color);
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 1) 40%,
+         rgba(34, 34, 34, 0)
+      ),
+      url("../Images/Hero_image.jpg");
+   background-size: cover;
+   background-position: right;
+}
+
+.hero img {
+   width: 75%;
+   max-width: 390px;
+   max-height: 150px;
+}
+
+.hero h1 {
+   font-weight: bold;
+   margin: var(--spacing-lg) 0 0 0;
+}
+
+.hero .row {
+   margin: var(--spacing-xl) 0;
+}
+
+.hero .row .col-1 {
+   width: 75%;
+}
+
+.hero .row .col-1 .row {
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+/* SERVICES SECTION */
+.services {
+   padding: var(--spacing-xl) 0;
+}
+
+.services .card li {
+   font-size: var(--font-size--xl);
+}
+
+.services .card:nth-child(1) ul {
+   list-style: url("../Images/Icons/Lightning.svg");
+}
+
+.services .card:nth-child(2) ul {
+   list-style: none;
+}
+
+.services .card:nth-child(2) ul li {
+   position: relative;
+}
+
+.services .card:nth-child(2) li::before {
+   content: '';
+   display: inline-block;
+   background-image: url("../Images/Icons/laptop-with-cursor-26.png");
+   height: 26px;
+   width: 26px;
+   position: absolute;
+   top: 8px;
+   left: -32px;
+ }
+
+/* ABOUT US SECTION */
+.about-us {
+   padding: var(--spacing-xl) 0;
+}
+
+.about-us .card-container {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 70%;
+   z-index: 1;
+}
+
+.about-us .card {
+   width: 100%;
+   background-color: var(--white-color);
+   color: var(--secondary-txt-color);
+   box-shadow: 0 0 10px var(--primary-txt-color);
+}
+
+.about-us .card .subtitle {
+   color: var(--secondary-txt-color);
+}
+
+.about-us .card span::before {
+   border-color: var(--secondary-txt-color) transparent transparent transparent;
+}
+
+.about-us .card span {
+   border-bottom: 1px solid var(--secondary-txt-color);
+   padding-bottom: var(--spacing-sm);
+}
+
+.about-us .image-container {
+   position: relative;
+}
+
+#about-us-image {
+   max-width: 768px;
+   opacity: 65%;
+   position: absolute;
+   top: 100px;
+   left: -75px;
+}

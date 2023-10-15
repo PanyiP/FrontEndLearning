@@ -1,0 +1,123 @@
+/* HERO SECTION */
+.hero-electrician {
+   padding: var(--spacing-md) 0;
+   color: var(--primary-txt-color);
+   background-image: linear-gradient(
+         to right,
+         rgba(34, 34, 34, 0.6) 70%,
+         rgba(34, 34, 34, 0.1)
+      ),
+      url("../Images/Hero_image.jpg");
+   background-size: cover;
+   background-position: right;
+}
+
+/* ELECTRICIAN SERVICES */
+.electrician-services {
+   padding: var(--spacing-xl) 0;
+}
+
+.electrician-services h2 {
+   margin-bottom: 0;
+}
+
+.electrician-services-grid {
+   margin-top: var(--spacing-md);
+   margin-bottom: var(--spacing-xl);
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.electrician-services-grid ul {
+   min-width: 33%;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0 var(--spacing-lg);
+}
+
+.electrician-services .card ul {
+   list-style: url("../Images/Icons/Lightning.svg");
+}
+
+.electrician-services .card ul li {
+   font-size: var(--font-size--xl);
+}
+
+.electrician-services .card h3 {
+   font-size: var(--font-size--h3-pc);
+}
+
+.electrician-services .card p {
+   font-size: var(--font-size--md);
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+   padding: var(--spacing-xl) 0;
+   position: relative;
+   height: 400px;
+}
+
+.testimonials a {
+   text-decoration: none;
+}
+
+.testimonials a:hover .review-card {
+   transform: scale(1.05);
+   box-shadow: 0 0 15px var(--white-color);
+}
+
+.testimonials .review-row {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   position: absolute;
+   top: 150px;
+   left: 100px;
+   right: 100px;
+}
+
+.testimonials .review-card {
+   background-color: var(--secondary-bg-color);
+   color: var(--secondary-txt-color);
+   padding: var(--spacing-lg);
+   margin: var(--spacing-md);
+   border-radius: 10px;
+   box-shadow: 0 0 5px var(--white-color);
+   transition: all 0.2s ease;
+}
+
+.testimonials .review-card span {
+   font-weight: bold;
+}
+
+.testimonials .review-card .rating {
+   margin-top: var(--spacing-sm);
+}
+
+.testimonials .review-card .checked {
+   color: orange;
+}
+
+.testimonials .link {
+   position: absolute;
+   top: var(--spacing-xl);
+   right: 20%;
+}
+
+/* PARTNERS SECTION */
+.electrician-partners {
+   padding: var(--spacing-xl) 0;
+}
+
+.electrician-partners .ep-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.electrician-partners img {
+   width: 256px;
+   height: 124px;
+   align-self: center;
+   margin: 0 auto;
+   object-fit: cover;
+}
