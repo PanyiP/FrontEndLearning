@@ -253,6 +253,12 @@ span {
    justify-content: flex-end;
 }
 
+.card .bottom img {
+   width: 100%;
+   height: 260px;
+   object-fit: cover;
+}
+
 .card .subtitle {
    color: var(--yellow-color);
    border-bottom: 1px solid var(--yellow-color);
