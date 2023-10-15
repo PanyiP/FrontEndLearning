@@ -224,11 +224,10 @@ span {
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-between;
+   gap: var(--spacing-md);
 }
 
 .card {
-   width: 48%;
-   height: 100%;
    box-sizing: border-box;
    background-color: var(--primary-bg-color);
    color: var(--primary-txt-color);
@@ -236,6 +235,8 @@ span {
    box-shadow: 0 0 10px var(--secondary-txt-color);
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
+   flex: 1 1;
    transition: all 400ms ease;
 }
 

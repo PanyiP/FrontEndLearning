@@ -12,12 +12,6 @@
    padding: var(--spacing-xl) 0;
 }
 
-.software-services .card {
-   width: 30%;
-   margin: var(--spacing-md);
-   flex: 1 1 auto;
-}
-
 .software-services ul {
    list-style: none;
 }

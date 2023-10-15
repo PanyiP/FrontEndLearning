@@ -54,15 +54,6 @@
       left: 50px;
       right: 50px;
    }
-
-   /* SOFTWARE SERVICES */
-   .software-services .card-container {
-      flex-wrap: wrap;
-   }
-
-   .software-services .card {
-      width: 45%;
-   }
 }
 
 @media only screen and (max-width: 950px) {
@@ -83,10 +74,6 @@
 
    .electrician-services-grid ul {
       min-width: 50%;
-   }
-
-   .electrician-services .card {
-      width: 100%;
    }
 }
 
@@ -131,23 +118,10 @@
          url(/Images/Hero_image.jpg);
    }
 
-   /* INDEX - SERVICES SECTION */
-   .services .card-container {
-      flex-wrap: wrap;
-   }
-
-   .services .card {
-      width: 100%;
-   }
-
    /* INDEX - ABOUT US SECTION */
    .about-us .card-container {
       width: 100%;
       justify-content: center;
-   }
-
-   .about-us .card {
-      width: 80%;
    }
 
    .about-us .image-container {
@@ -196,15 +170,6 @@
       grid-template-columns: 1fr;
    }
 
-   /* SOFTWARE SERVICES */
-   .software-services .card-container {
-      flex-wrap: wrap;
-   }
-
-   .software-services .card {
-      width: 100%;
-   }
-
    /* SOFTWARE DEVELOPMENT - STEPS */
    .software-development .col-2:nth-child(1) {
       width: 60%;
@@ -216,11 +181,6 @@
 }
 
 @media only screen and (max-width: 630px) {
-   /* INDEX - ABOUT US SECTION */
-   .about-us .card {
-      width: 100%;
-   }
-
    /* ELECTRICIAN & SOFTWARE - REFERENCES SECTION */
    .references .gallery-container {
       margin: var(--spacing-sm) 0;
@@ -313,11 +273,6 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-   }
-
-   /* INDEX - ABOUT US SECTION */
-   .about-us .card {
-      width: 100%;
    }
 
    /* FOOTER SECTION */
