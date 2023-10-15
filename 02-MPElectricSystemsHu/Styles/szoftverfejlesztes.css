@@ -1,6 +1,29 @@
+/* HERO SECTION */
+.hero-software {
+   width: 100%;
+   height: calc(100vh / 2);
+   position: absolute;
+   z-index: -1;
+   color: var(--primary-txt-color);
+   background-image: linear-gradient(
+         to right,
+         rgba(255, 255, 255, 1) 65%,
+         rgba(255, 255, 255, 0.3) 90%,
+         rgba(255, 255, 255, 1) 100%
+      ),
+      url("../Images/hero-software-1500x1000.jpg");
+   background-size: contain;
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
 /* SOFTWARE SERVICES */
 .software-services {
    padding: var(--spacing-xl) 0;
+}
+
+main .background-light {
+   background-color: rgba(255, 255, 255, 0);
 }
 
 .software-services h1 {
