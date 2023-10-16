@@ -204,21 +204,18 @@ span {
    width: 100%;
    display: flex;
    flex-direction: column;
-   overflow: hidden
 }
 
 .col-2 {
    width: 50%;
    display: flex;
    flex-direction: column;
-   overflow: hidden
 }
 
 .col-3 {
    width: 33%;
    display: flex;
    flex-direction: column;
-   overflow: hidden
 }
 
 /* CARDS */

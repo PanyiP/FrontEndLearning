@@ -179,6 +179,11 @@
    .software-development .col-2:nth-child(2) {
       width: 40%;
    }
+
+   .software-development .development-steps-image-container {
+      right: -67%;
+      width: 67%;
+   }
 }
 
 @media only screen and (max-width: 630px) {
@@ -222,10 +227,7 @@
    }
 
    .software-development .development-steps .development-steps-image-container {
-      visibility: hidden;
-   }
-
-   .software-development .development-steps > li:hover .development-steps-image-container {
+      width: 0;
       visibility: hidden;
    }
 }
