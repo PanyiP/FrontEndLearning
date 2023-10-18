@@ -372,6 +372,12 @@
       top: 0px;
    }
 
+   /* ELECTRICIAN - TESTIMONIALS SECTION */
+   .testimonials {
+      padding: var(--spacing-md) 0;
+      height: 1100px;
+   }
+
    /* FOOTNOTES SECTION*/
    .footnotes p {
       font-size: var(--font-size--xs);
