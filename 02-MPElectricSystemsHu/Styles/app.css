@@ -519,7 +519,7 @@ nav .bar1,
 }
 
 @keyframes flipBar1 {
-   form {
+   from {
       transform: rotate(0);
    }
 
@@ -529,7 +529,7 @@ nav .bar1,
 }
 
 @keyframes fadeBar2 {
-   form {
+   from {
       transform: scaleX(1);
       opacity: 1;
    }
@@ -541,7 +541,7 @@ nav .bar1,
 }
 
 @keyframes flipBar3 {
-   form {
+   from {
       transform: rotate(0);
    }
 
@@ -566,7 +566,7 @@ nav .bar1,
    right: -160px;
    z-index: 2;
 
-   transform: translatex(160px);
+   transform: translateX(160px);
    transition: 1s;
 }
 
@@ -575,7 +575,7 @@ nav .bar1,
 }
 
 .mobile-nav-open {
-   transform: translatex(-160px);
+   transform: translateX(-160px);
    transition: 1s;
 }
 
