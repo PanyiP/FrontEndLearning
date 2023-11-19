@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-    <title>Bootstrap Sandbox | Modal</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Modal</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-      <!-- Modal Button -->
-      <button type="button" class="btn btn-primary">Open Modal</button>
+  <title>Bootstrap Sandbox | Modal</title>
+</head>
 
-      <!-- Modal -->
+<body>
+  <div class="container">
+    <h1 class="mb-5">Modal</h1>
 
-      <!-- Don't go past here -->
+    <!-- Modal Button -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="myModalLabel">Modal Title</h1>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit maxime omnis facilis, quasi
+            magni suscipit autem nisi voluptatibus laborum recusandae saepe obcaecati eos consequuntur delectus labore
+            ut at soluta?
+            Iusto vero soluta atque, ut, officiis aut doloribus quidem nobis quis hic aperiam aspernatur quasi quos
+            cupiditate debitis sunt facilis animi totam non sint nihil nostrum fugiat voluptatem! Enim, possimus.
+            Laborum necessitatibus, perspiciatis non ex doloribus, ut molestias reiciendis tenetur sapiente debitis,
+            quaerat adipisci officia minima obcaecati illum provident. Perferendis nulla minima voluptate eum natus
+            eligendi accusamus totam corrupti exercitationem!
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
