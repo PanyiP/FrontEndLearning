@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Popovers & Tooltips</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Popovers & Tooltips</h1>
 
-      <!-- Popover -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Popovers & Tooltips</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Popovers & Tooltips</h1>
 
-      <!-- Tooltip -->
+    <!-- Popover -->
+    <button class="btn btn-danger btn-lg" id="popover" data-bs-toggle="popover" data-bs-title="Title"
+      data-bs-content="Popver content">Toggle Popover</button>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
+    <br /><br />
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Tooltip -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit porro impedit dolorem, voluptates libero
+      perspiciatis voluptatum, <a href="#" data-bs-toggle="tooltip" data-bs-title="Tooltip one">eligendi</a> cum et
+      consequatur harum nemo? Dicta eaque provident, at possimus aliquam omnis
+      voluptas!
+      <a href="#" data-bs-toggle="tooltip" data-bs-title="Tooltip two">Tempore</a> voluptatibus libero reiciendis sequi
+      saepe, magnam accusantium ducimus illo excepturi nemo officiis fuga,
+      voluptas quis nihil fugiat sint asperiores cupiditate modi. Fugit neque illo doloremque quia cupiditate tempora
+      iure!
+      Voluptas officia maiores esse cumque sit quos aut fuga hic, fugiat, exercitationem velit quo rerum praesentium
+      molestiae dolor? Repudiandae laborum minima, commodi hic illum ad obcaecati iure rerum molestiae esse.
+    </p>
+
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Popover initialization (popper.js library, included in bootstrap.bundle.min.js)
+    const popoverElement = document.getElementById('popover');
+    const popover = new bootstrap.Popover(popoverElement);
+
+    // Tooltip initialization (popper.js library, included in bootstrap.bundle.min.js)
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map((tooltipTriggerElement) => {
+      new bootstrap.Tooltip(tooltipTriggerElement);
+    })
+  </script>
+</body>
+
 </html>
