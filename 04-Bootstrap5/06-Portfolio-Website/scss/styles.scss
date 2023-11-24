@@ -1,48 +1,78 @@
-// Font
-$font-family-sans-serif: 'Poppins', sans-serif;
+.header {
+  background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-// Color
-$primary: #cc005f;
-$secondary: #990047;
-$dark: #000;
-$light: #f4f4f4;
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
 
-// Buttons
-$button-radius: 0;
-$button-padding-x: 30px;
-$button-padding-y: 12px;
+.header .text-container {
+  z-index: 10;
+}
 
-$btn-border-radius: $button-radius;
-$btn-border-radius-sm: $button-radius;
-$btn-border-radius-lg: $button-radius;
-$btn-padding-y: $button-padding-y;
-$btn-padding-y-lg: $button-padding-y;
-$btn-padding-y-sm: $button-padding-y;
-$btn-padding-x: $button-padding-x;
-$btn-padding-x-lg: $button-padding-x;
-$btn-padding-x-sm: $button-padding-x;
+.header .roles {
+  font-family: 'lora-regular', serif;
+}
 
-$navbar-toggler-border-radius: 5px;
+.header .social {
+  bottom: 50px;
+}
 
-// Spacing
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 6,
-  7: $spacer * 8,
-  8: $spacer * 12,
-) !default;
+.about-img {
+  width: 200px;
+}
 
-// Container
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 980px,
-  xxl: 1000px,
-) !default;
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.services {
+  background: url('../images/bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.services .container {
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+  .header .social i {
+    font-size: 30px;
+  }
+
+  .header .roles {
+    font-size: 18px !important;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+}
