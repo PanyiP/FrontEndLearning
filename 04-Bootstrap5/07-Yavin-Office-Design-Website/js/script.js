@@ -14,8 +14,8 @@ function userScroll() {
  }
  
  function scrollToTop() {
-   document.body.scrollTop = 0;
-   document.documentElement.scrollTop = 0;
+   document.body.scrollTop = 0; // Safari
+   document.documentElement.scrollTop = 0; // Chrome, Firefox, Edge
  }
  
  function incrementStats() {
