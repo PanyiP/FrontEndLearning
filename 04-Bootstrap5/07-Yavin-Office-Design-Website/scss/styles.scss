@@ -4,12 +4,10 @@
  
  .btn-outline-secondary {
    color: var(--bs-secondary);
- }
- 
- .btn-outline-secondary {
+
    &:hover {
-     color: #fff;
-   }
+    color: #fff;
+  }
  }
  
  .header .decoration-star {
@@ -65,26 +63,22 @@
    background-color: #44434a;
    cursor: pointer;
    transition: all 0.5s ease-in-out;
- }
- 
- .to-top-btn {
+
    &:hover {
-     background-color: #1d1d21;
-   }
- }
- 
- .to-top-btn {
-   img {
-     margin-bottom: 0.25rem;
-     width: 18px;
-   }
+    background-color: #1d1d21;
+  }
+
+  img {
+    margin-bottom: 0.25rem;
+    width: 18px;
+  }
  }
  
  .show {
    opacity: 1;
  }
  
- @media (max-width: 992px) {
+ @media only screen and (max-width: 992px) {
    .xl-text {
      font-size: 50px;
    }
@@ -127,4 +121,10 @@
      top: 300px;
    }
  }
+
+ @media only screen and (max-width: 576px) {
+  .xl-text {
+    font-size: 50px;
+  }
+}
  

@@ -5,7 +5,6 @@
 .btn-outline-secondary {
   color: var(--bs-secondary);
 }
-
 .btn-outline-secondary:hover {
   color: #fff;
 }
@@ -64,11 +63,9 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-
 .to-top-btn:hover {
   background-color: #1d1d21;
 }
-
 .to-top-btn img {
   margin-bottom: 0.25rem;
   width: 18px;
@@ -78,7 +75,7 @@
   opacity: 1;
 }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .xl-text {
     font-size: 50px;
   }
@@ -109,5 +106,10 @@
   }
   .details-2 .decoration-star {
     top: 300px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .xl-text {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
