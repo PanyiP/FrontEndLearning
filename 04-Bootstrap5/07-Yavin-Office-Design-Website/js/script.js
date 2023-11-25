@@ -25,7 +25,7 @@ function userScroll() {
      counter.innerText = 0;
  
      const updateCounter = () => {
-       const target = +counter.getAttribute('data-target');
+       const target = +counter.getAttribute('data-target'); // The plus sign casts the string returned by .getAttribute() to integer
        const c = +counter.innerText;
  
        const increment = target / 200;
