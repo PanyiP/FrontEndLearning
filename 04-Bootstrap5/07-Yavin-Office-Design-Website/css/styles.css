@@ -107,9 +107,4 @@
   .details-2 .decoration-star {
     top: 300px;
   }
-}
-@media only screen and (max-width: 576px) {
-  .xl-text {
-    font-size: 50px;
-  }
 }/*# sourceMappingURL=styles.css.map */
