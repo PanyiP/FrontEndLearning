@@ -31,3 +31,28 @@ function userScroll() {
  }
  
  document.addEventListener('DOMContentLoaded', userScroll);
+
+ // Video Modal
+const videoPlayBtn = document.querySelector('.video-btn');
+const videoModal = document.querySelector('#videoModal');
+const videoIFrame = document.querySelector('#video');
+let videoSrc;
+
+if (videoPlayBtn !== null) {
+  videoPlayBtn.addEventListener('click', () => {
+    videoSrc = videoPlayBtn.getAttribute('data-bs-src');
+  });
+}
+
+if (videoModal !== null) {
+  videoModal.addEventListener('shown.bs.modal', () => { // custom bootstrap event
+    videoIFrame.setAttribute(
+      'src',
+      videoSrc + '?autoplay=1;modestbranding=1;showInfo=0'
+    );
+  });
+
+  videoModal.addEventListener('hide.bs.modal', () => {
+    videoIFrame.setAttribute('src', videoSrc);
+  });
+}

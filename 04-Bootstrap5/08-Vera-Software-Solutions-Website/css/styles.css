@@ -103,6 +103,11 @@
   border-bottom: 16px solid transparent;
 }
 
+.video-modal .modal-dialog {
+  max-width: 1150px;
+  margin-top: 20px;
+}
+
 @keyframes pulse-border {
   0% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
