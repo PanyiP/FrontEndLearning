@@ -1,0 +1,31 @@
+// Font
+$font-family-sans-serif: 'Raleway', sans-serif;
+
+// Colors
+$primary: rgba(223, 139, 25, 1);
+$secondary: rgba(168, 83, 37, 1);
+$dark: rgba(25, 25, 25, 1);
+$light: rgba(255, 255, 255, 1);
+
+$body-bg: #fff;
+$body-color: #0c0c0e;
+
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+@import '../bootstrap/scss/bootstrap.scss';

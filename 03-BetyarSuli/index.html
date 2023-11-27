@@ -1,46 +1,45 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="hu">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Kutyaiskola Veszprémben, ahol vidáman, könnyedény folyik a tanítás</title>
-   <link rel="icon" href="./images/weboldal-ikon-192x192.png" sizes="192x192" />
-
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&family=Swanky+and+Moo+Moo&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" href="styles/app.css">
-   <!-- FontAwesome -->
-   <link rel="stylesheet" href="./styles/fontawesome/css/fontawesome.css">
-   <link rel="stylesheet" href="./styles/fontawesome/css/brands.css">
-   <link rel="stylesheet" href="./styles/fontawesome/css/solid.css">
+   <link rel="stylesheet" href="./css/font-awesome.min.css" />
+   <link rel="stylesheet" href="./css/bootstrap.min.css" />
+   <link rel="stylesheet" href="./css/styles.min.css" />
+   <title>Kutyaiskola Veszprémben, ahol vidáman, könnyedény folyik a tanítás</title>
 </head>
 
 <body>
-   <header>
-      <div class="nav-section">
-         <nav class="background-main-color">
-            <div class="navbar">
-               <div class="left-side">
-                  <a href="./index.html"><img src="images/betyarsuli_logo.png" alt="Betyársuli logó"></a>
-               </div>
-               <div class="right-side">
-                  <ul>
-                     <li><a href="#">Főoldal</a></li>
-                     <li><a href="#">Tanfolyamaink</a></li>
-                     <li><a href="#">Bemutatók</a></li>
-                     <li><a href="#">Galéria</a></li>
-                     <li><a href="#">Partnereink</a></li>
-                     <li><a href="#">Kapcsolat</a></li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
+   <nav class="navbar navbar-expand-lg">
+      <div class="container">
+         <a class="navbar-brand" href="./index.html">
+            <img src="./images/betyarsuli_logo.png" alt="Betyársuli logó" width="250px">
+         </a>
+
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Főoldal</a></li>
+               <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Tanfolyamaink</a></li>
+               <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Bemutatók</a></li>
+               <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Galéria</a></li>
+               <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Partnereink</a></li>
+               <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Kapcsolat</a></li>
+            </ul>
+         </div>
       </div>
-   </header>
+   </nav>
 
    <main>
       <div class="social-section padding-2">
@@ -175,6 +174,8 @@
          </div>
       </div>
    </footer>
+   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 
 </html>
