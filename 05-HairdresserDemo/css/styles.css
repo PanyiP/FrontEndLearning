@@ -1,0 +1,9 @@
+.navbar-sticky {
+  background-color: rgba(25, 25, 25, 0.9);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .h1 {
+  display: inline-block;
+}/*# sourceMappingURL=styles.css.map */
