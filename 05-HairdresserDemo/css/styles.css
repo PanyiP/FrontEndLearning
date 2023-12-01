@@ -6,4 +6,8 @@
 
 footer .h1 {
   display: inline-block;
+}
+
+.hero-section .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=styles.css.map */
