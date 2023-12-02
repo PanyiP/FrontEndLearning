@@ -1,0 +1,18 @@
+.navbar-sticky {
+  background-color: rgba(238, 238, 238, 0.75);
+  transition: background-color 0.3s ease-in-out;
+}
+
+footer .h1 {
+  display: inline-block;
+}
+
+.hero-section .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#createdby {
+  color: #555;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}/*# sourceMappingURL=styles.css.map */
