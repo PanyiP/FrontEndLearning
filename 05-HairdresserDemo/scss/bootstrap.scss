@@ -1,17 +1,20 @@
 // Font
 $font-family-sans-serif: 'Dancing Script', cursive, sans-serif;
+$font-size-base: 1.3rem;
 
 // Colors
-$primary: rgba(25, 25, 25, 1);
-$secondary: rgba(255, 255, 255, 1);
+$primary: #B87C4C;
+$secondary: rgba(229, 220, 188, 1);
 $dark: rgba(25, 25, 25, 1);
-$light: rgba(255, 255, 255, 1);
+$light: #eee;
 
 $body-bg: #fff;
 $body-color: #0c0c0e;
 
 $navbar-light-brand-color: inherit;
-$navbar-light-color: inherit;
+
+// $navbar-light-toggler-border-color: $primary;
+// $navbar-light-icon-color: $primary;
 
 // Spacing
 $spacer: 1rem !default;

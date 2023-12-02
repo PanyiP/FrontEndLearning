@@ -1,4 +1,8 @@
 ﻿<!-- https://www.lushlockssalon.com/ -->
+<!-- 
+   TODO:
+   - Footer elrendezés kis kijelzőn
+ -->
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -18,8 +22,8 @@
    <title>Lush Locks Salon</title>
 </head>
 
-<body>
-   <nav class="navbar navbar-expand-md position-sticky top-0">
+<body class="position-relative bg-light">
+   <nav class="navbar navbar-expand-md position-sticky top-0 z-3">
       <div class="container">
          <a class="navbar-brand" href="./index.html">
             <h1>Lush Locks Salon</h1>
@@ -32,17 +36,17 @@
 
          <div class="collapse navbar-collapse fs-4" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-               <li class="nav-item"><a class="nav-link fw-bold" href="#">Home</a></li>
-               <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
-               <li class="nav-item"><a class="nav-link fw-bold" href="#services">Services</a></li>
-               <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
+               <li class="nav-item"><a class="nav-link link-primary fw-bold" href="#">Home</a></li>
+               <li class="nav-item"><a class="nav-link link-primary fw-bold" href="#services">Services</a></li>
+               <li class="nav-item"><a class="nav-link link-primary fw-bold" href="#about">About</a></li>
+               <li class="nav-item"><a class="nav-link link-primary fw-bold" href="#contact">Contact</a></li>
             </ul>
          </div>
       </div>
    </nav>
 
    <main>
-      <section class="hero-section bg-white">
+      <section class="hero-section bg-light my-5">
          <div class="container">
             <div id="heroCarousel" class="carousel carousel-fade" data-bs-ride="carousel">
                <div class="carousel-indicators">
@@ -85,34 +89,200 @@
          </div>
       </section>
 
-      <section class="services-section bg-black text-light" id="services">
+      <section class="services-section bg-dark text-light py-5" id="services">
          <div class="container">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati animi dolorem. Accusantium,
-               veritatis. Repellendus, vero aperiam. Quos commodi sequi saepe deserunt. Distinctio, repellendus! Sint
-               reprehenderit dolorem quis aut modi?</p>
+            <h2 class="text-center pb-5">Services</h2>
+            <ul class="nav nav-tabs justify-content-center gap-3" id="myTab" role="tablist">
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cuts-tab" data-bs-toggle="tab" data-bs-target="#cuts-tab-pane"
+                     type="button" role="tab" aria-controls="cuts-tab-pane" aria-selected="true">Cuts</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="color-tab" data-bs-toggle="tab" data-bs-target="#color-tab-pane"
+                     type="button" role="tab" aria-controls="color-tab-pane" aria-selected="false">Color</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="highlights-tab" data-bs-toggle="tab"
+                     data-bs-target="#highlights-tab-pane" type="button" role="tab" aria-controls="highlights-tab-pane"
+                     aria-selected="false">Highlights</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="styling-tab" data-bs-toggle="tab" data-bs-target="#styling-tab-pane"
+                     type="button" role="tab" aria-controls="styling-tab-pane" aria-selected="false">Styling</button>
+               </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+               <div class="tab-pane fade show active" id="cuts-tab-pane" role="tabpanel" aria-labelledby="cuts-tab"
+                  tabindex="0">
+                  <ul class="list-group list-group-flush list-unstyled">
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Wash</h5>
+                        <p>$45</p>
+                     </li>
+                     <li class="d-flex justify-content-between">
+                        <h5>Woman's Cut</h5>
+                        <p>$55</p>
+                     </li>
+                     <li class="d-flex justify-content-between">
+                        <h5>Man's Cut</h5>
+                        <p>$35</p>
+                     </li>
+                     <li class="d-flex justify-content-between">
+                        <h5>Children's Cut (12 and under)</h5>
+                        <p>$20</p>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="tab-pane fade" id="color-tab-pane" role="tabpanel" aria-labelledby="color-tab" tabindex="0">
+                  <ul class="list-group list-unstyled">
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Single Process Color</h5>
+                        <p>From $85</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Double Process Color</h5>
+                        <p>From $120</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Ombre</h5>
+                        <p>From $180</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Sombre</h5>
+                        <p>From $120</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Reverse Ombre</h5>
+                        <p>From $180</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Tip Color</h5>
+                        <p>From $30</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Root Touchup</h5>
+                        <p>From $36</p>
+                     </li>
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Toner</h5>
+                        <p>From $35</p>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="tab-pane fade" id="highlights-tab-pane" role="tabpanel" aria-labelledby="highlights-tab"
+                  tabindex="0">
+                  <ul class="list-group list-group-flush list-unstyled">
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Sinlge Color</h5>
+                        <p>From $90</p>
+                     </li>
+                     <li class="d-flex justify-content-between">
+                        <h5>Double Color</h5>
+                        <p>From $180</p>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="tab-pane fade" id="styling-tab-pane" role="tabpanel" aria-labelledby="styling-tab"
+                  tabindex="0">
+                  <ul class="list-group list-group-flush list-unstyled">
+                     <li class="d-flex justify-content-between mt-3">
+                        <h5>Style</h5>
+                        <p>$100 per hour</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </section>
 
-      <section class="about-section bg-white" id="about">
+      <section class="about-section bg-light py-5" id="about">
          <div class="container">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati animi dolorem. Accusantium,
-               veritatis. Repellendus, vero aperiam. Quos commodi sequi saepe deserunt. Distinctio, repellendus! Sint
-               reprehenderit dolorem quis aut modi?</p>
+            <h2 class="text-center pb-5">About</h2>
+            <p>Lush Locks Salon is an appointment only salon owned and run by hairstylist Candice Heaton.</p>
+            <p>Lush Locks is a private elegant home salon with a room built for and dedicated to hair with its own
+               entrance and private from the rest of the home.</p>
          </div>
       </section>
 
-      <section class="contact-section bg-black text-light" id="contact">
+      <section class="gallery-section bg-dark text-light py-5" id="gallery">
          <div class="container">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati animi dolorem. Accusantium,
-               veritatis. Repellendus, vero aperiam. Quos commodi sequi saepe deserunt. Distinctio, repellendus! Sint
-               reprehenderit dolorem quis aut modi?</p>
+            <h2 class="text-center mt-3 mb-4">Essential Looks & Products</h2>
+            <div class="row">
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-1.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-2.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-3.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-4.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-5.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-6.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-7.jpg" alt="">
+                  </div>
+               </div>
+               <div class="col-4 col-lg-3 my-2">
+                  <div class="img-wrapper">
+                     <img class="img-fluid" src="./images/gallery-8.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact-section bg-light py-5" id="contact">
+         <div class="container">
+            <h2 class="text-center pb-5">Contact</h2>
+            <div class="row p-3 gap-2">
+               <div class="col py-3 bg-dark text-light d-flex flex-column align-items-center">
+                  <h3>Phone:</h3>
+                  <p class="text-center">+1 435 456 1479</p>
+                  <h3>Email:</h3>
+                  <p class="text-center">info@lushlockssalon.com</p>
+               </div>
+               <div class="col py-3 bg-secondary text-dark d-flex flex-column align-items-center">
+                  <h3>Open hours:</h3>
+                  <p>Monday - Friday</p>
+                  <p>10 am - 4 pm</p>
+                  <p>By Appointment Only</p>
+               </div>
+               <div class="col py-3 bg-dark text-light d-flex flex-column align-items-center">
+                  <h3>Address:</h3>
+                  <p class="text-center">8365 Magnolia Ln Saint George, UT 37543</p>
+               </div>
+            </div>
          </div>
       </section>
    </main>
 
-   <footer class="bg-black">
+   <footer class="bg-dark py-4">
       <div class="container text-white">
-         <div class="row pt-4 pb-4">
+         <div class="row">
             <div class="col-5 col-lg-4 mb-3 d-flex flex-column justify-content-center">
                <a class="text-light text-decoration-none" href="./index.html">
                   <h1>Lush Locks Salon</h1>
@@ -120,36 +290,39 @@
                <p>© 2023 by Lush Locks.</p>
             </div>
 
-            <div class="col-4 col-xl-4 mb-3 d-flex flex-column justify-content-center">
+            <div class="col-4 col-lg-4 mb-3 d-flex flex-column justify-content-center">
                <p>8365 Magnolia Ln Saint George, UT 37543</p>
                <p>+1 435 456 1479</p>
+               <p>info@lushlockssalon.com</p>
             </div>
 
-            <div class="col-2 col-lg-3 mb-3 d-flex flex-column justify-content-center">
+            <div class="col-2 col-lg-3 mb-3 d-flex flex-column justify-content-center align-items-center">
                <ul class="list-group-flush list-unstyled">
-                  <li class="mb-2"><a class="fw-bold text-light text-decoration-none" href="#">Home</a></li>
-                  <li class="mb-2"><a class="fw-bold text-light text-decoration-none" href="#about">About</a></li>
-                  <li class="mb-2"><a class="fw-bold text-light text-decoration-none" href="#services">Services</a>
+                  <li class="mb-2"><a class="link-primary fw-bold text-decoration-none" href="#">Home</a>
                   </li>
-                  <li class="mb-2"><a class="fw-bold text-light text-decoration-none" href="#contact">Contact</a></li>
+                  <li class="mb-2"><a class="link-primary fw-bold text-decoration-none" href="#services">Services</a>
+                  </li>
+                  <li class="mb-2"><a class="link-primary fw-bold text-decoration-none" href="#about">About</a></li>
+                  <li class="mb-2"><a class="link-primary fw-bold text-decoration-none" href="#contact">Contact</a></li>
                </ul>
             </div>
 
-            <div class="col-1 mb-3 d-flex flex-column">
+            <div class="col-1 mb-3 d-flex flex-column justify-content-center align-items-center">
                <a href="#" class="text-decoration-none mb-2">
-                  <i class="fab fa-facebook fa-2x text-light mx-2"></i>
+                  <i class="fab fa-facebook fa-2x text-light mx-1"></i>
                </a>
                <a href="#" class="text-decoration-none mb-2">
-                  <i class="fab fa-twitter fa-2x text-light mx-2"></i>
+                  <i class="fab fa-twitter fa-2x text-light"></i>
                </a>
                <a href="#" class="text-decoration-none mb-2">
-                  <i class="fab fa-instagram fa-2x text-light mx-2"></i>
+                  <i class="fab fa-instagram fa-2x text-light"></i>
                </a>
                <a href="#" class="text-decoration-none mb-2">
-                  <i class="fab fa-pinterest fa-2x text-light mx-2"></i>
+                  <i class="fab fa-pinterest fa-2x text-light"></i>
                </a>
             </div>
          </div>
+         <p id="createdby">Created by: Peter Panyi, MP Electric Systems Kft.</p>
       </div>
    </footer>
 
