@@ -1,7 +1,7 @@
 ﻿<!-- Inspiration: https://www.lushlockssalon.com/ -->
 <!-- 
    todo:
-   - privacy policy
+   - 404 page
  -->
 <!DOCTYPE html>
 <!-- Fill in language -->
@@ -337,7 +337,7 @@
          <div class="row">
             <div class="col-5 d-flex flex-column justify-content-start justify-content-md-center">
                <a class="text-light text-decoration-none" href="./index.html">
-                  <p class="fs-1">Lush Locks Salon</h1>
+                  <p class="fs-1">Lush Locks Salon</p>
                </a>
                <p>© 2023 by Lush Locks.</p>
             </div>
@@ -362,6 +362,8 @@
                         </li>
                         <li class="mb-2"><a class="link-primary fw-bold text-decoration-none"
                               href="#contact">Contact</a></li>
+                        <li class="mb-2"><a class="link-primary fw-bold text-decoration-none" href="./privacy.html"
+                              target="_blank">Privacy Policy</a></li>
                      </ul>
                   </div>
 
@@ -389,6 +391,21 @@
          <p id="createdby" class="mt-4 mt-md-0">Created by: Peter Panyi, MP Electric Systems Kft.</p>
       </div>
    </footer>
+
+   <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="privacyToast" class="toast fs-6" role="status" aria-live="polite" aria-atomic="true">
+         <div class="toast-header">
+            <i class="fas fa-scissors fa-2x rounded me-2"></i>
+            <strong class="me-auto">Lush Locks Salon</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+         </div>
+         <div class="toast-body">
+            The website neither use any cookies or nor store any user data. Check our <a href="./privacy.html"
+               class="link-primary text-decoration-none">Privacy Policy</a> for
+            more info.
+         </div>
+      </div>
+   </div>
 
    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
    <script src="./js/script.js"></script>

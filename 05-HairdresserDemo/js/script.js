@@ -16,3 +16,15 @@ function userScroll() {
  }
  
  document.addEventListener('DOMContentLoaded', userScroll);
+
+ // Toast
+ function showToast() {
+  const privacyToast = document.getElementById('privacyToast')
+  if (privacyToast)
+    {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(privacyToast);
+      toastBootstrap.show()
+    }
+}
+
+document.addEventListener('DOMContentLoaded', showToast);
