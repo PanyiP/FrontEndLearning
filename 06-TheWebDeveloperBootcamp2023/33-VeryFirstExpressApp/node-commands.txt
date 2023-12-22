@@ -1,0 +1,7 @@
+npm init [-y] -> initialize package handling, -y -> default settings, no questions asked
+npm i express -> installs the Express package
+npm i -g nodemon -> installs nodemon globally (nodemon watches for code changes and restarts server when code is changed)
+node index.js -> runs index.js
+nodemon index.js -> runs index.js
+
+ctrl+c -> stops the application
