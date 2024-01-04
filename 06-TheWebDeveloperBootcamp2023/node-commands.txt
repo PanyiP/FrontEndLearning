@@ -1,7 +1,10 @@
 npm init [-y] -> initialize package handling, -y -> default settings, no questions asked
 npm i express -> installs the Express package
 npm i -g nodemon -> installs nodemon globally (nodemon watches for code changes and restarts server when code is changed)
-npm i ejs -> installs Embedded JavaScript package for templating
+npm i ejs -> installs Embedded JavaScript package for html templating
+npm i uuid -> installs Uuid package for generating unique IDs
+npm i method-override -> installs Method override package for using PUT/PATCH/DELETE in browser forms
+
 node index.js -> runs index.js
 nodemon index.js -> runs index.js
 
