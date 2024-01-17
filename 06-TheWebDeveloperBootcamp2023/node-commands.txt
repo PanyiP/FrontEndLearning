@@ -9,6 +9,8 @@ npm i method-override -> installs Method override package for using PUT/PATCH/DE
 npm i mongoose -> installs Mongoose ODM (Object Data Mapper) (maps mongoDB data to Javascrpt objects)
 npm i morgan -> installs Morgan - Logger Middleware
 npm i joi -> installs this package which is a Javascrip validator package. It enables backend data validation
+npm i express-session -> installs express session middleware
+npm i connect-flash -> installs this package to show (only once) a session message to the user
 
 node index.js -> runs index.js
 nodemon index.js -> runs index.js
