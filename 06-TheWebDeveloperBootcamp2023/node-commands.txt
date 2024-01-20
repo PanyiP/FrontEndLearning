@@ -12,6 +12,9 @@ npm i joi -> installs this package which is a Javascrip validator package. It en
 npm i express-session -> installs express session middleware
 npm i connect-flash -> installs this package to show (only once) a session message to the user
 
+npm i bcrypt -> installs authentication and authorization package BCrypt
+npm i passport-??? -> installs passport package for authentication (facebook / google / etc... login) (There are more packages starting with passport-??? to install depending on what functionality you need)
+
 node index.js -> runs index.js
 nodemon index.js -> runs index.js
 
