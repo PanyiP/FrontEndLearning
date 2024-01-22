@@ -15,6 +15,9 @@ npm i connect-flash -> installs this package to show (only once) a session messa
 npm i bcrypt -> installs authentication and authorization package BCrypt
 npm i passport-??? -> installs passport package for authentication (facebook / google / etc... login) (There are more packages starting with passport-??? to install depending on what functionality you need)
 
+npm i multer -> installs this package to be able to use multi part forms to upload files
+npm i dotenv -> installs this package to use .env files (environment variables) to store secrets (API keys for example) - For development purposes only!!!
+
 node index.js -> runs index.js
 nodemon index.js -> runs index.js
 
