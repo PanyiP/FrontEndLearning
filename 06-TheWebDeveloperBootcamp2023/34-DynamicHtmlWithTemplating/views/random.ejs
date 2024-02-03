@@ -1,0 +1,16 @@
+<%- include("partials/head.ejs") %>
+
+   <%- include("partials/navbar.ejs") %>
+
+      <h1>
+         Random number: <%= rand %>
+      </h1>
+      <p>
+         <% if(rand % 2===0) { %>
+            <h2> This is an even number</h2>
+            <% } else { %>
+               <h2> This is an odd number</h2>
+               <% } %>
+      </p>
+
+      <%- include("partials/foot.ejs") %>

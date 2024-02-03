@@ -31,3 +31,7 @@ Vera Software Solutions example website - [Visit website](https://panyip.github.
 Hairdresser Demo website | Inspired by - [Lush Locks Salon](https://www.lushlockssalon.com/)
 
 Hairdresser Demo website - [Visit website](https://panyip.github.io/FrontEndLearning/05-HairdresserDemo/index.html)
+
+## 06-TheWebDeveloperBootcamp2023
+
+The Web Developer Bootcamp 2023 - [Course info](https://www.udemy.com/course/the-web-developer-bootcamp/)
